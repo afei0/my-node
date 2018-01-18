@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "gh-pages -d _book"
   },
-  "homepage": "http://afei0.github.io/my-node",
+  "homepage": "https://afei0.github.io/my-node",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/afei0/my-node.git"
