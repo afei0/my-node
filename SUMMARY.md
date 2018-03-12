@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [安装gitbook](gitbook.md)
+* [安装gitbook](gitbook/gitbook.md)
 * [第一章：redux](redux/index.md)
   * [第一节：state 复习](redux/1-state.md)
   * [第二节：你好 redux](redux/2-hello-redux.md)
@@ -30,3 +30,4 @@
 * [本地安装 Gitbook](gitbook/gtibook.md)
   * [笔记网址](gitbook/nodebook.md)
   * [上传 Gitbook](gitbook/pages.md)
+* [创建antd-mobile开发环境](Environmental/antd-mobile.md)
