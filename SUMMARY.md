@@ -24,6 +24,7 @@
   * [第三节：vue-new](vue-new/3-state.md)
   * [第四节：vue-new](vue-new/4-form.md)
   * [Home](vue-new/index.md)
+* [第三章：vue](command/command.md)
 * [Html笔记](html/html笔记.md)
 * [api](vue-node/api.md)
   * [从服务器加载数据](vue-node/从服务器加载数据.md)
