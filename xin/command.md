@@ -36,16 +36,22 @@ cd d: 掉转到D盘
 
 
 
-sudo apt-get install git    安装git
+## sudo apt-get install git    安装git
 
 
 git add . 
 git commit -m'1'
 git push
 
-git 记住密码
+## git 记住密码
 cd ~
 ls -a
 cat ～/.ssh/id_rsa.pub
 复制密码到github网站 点击头像 settings SSH 添加
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC///KiMs1KWyMd5IEE3rJC5o9+pqySc5bfQlKb1ZDAqxsyMUfvz4OHtYctIUd3P5ujjM9KM57cTw/0qQuYNhsKXXj+uDuqsHJpmYtYi3WUET3zyS1mKeUxMCYlJprzg6iFI4mKX1mF6Va9AIFiWVBWW7rAUVa4ENALFdzKV33FIgZfPcKN/D1q35bdV7WWA76QIbMxYeg2cJubzfN/LjzK/CBrlRBxE/U1YBFmTciCMf38nbc9koz4RRzjOAB0+hXBY9LGSQP/BTR6vWdWshpbBKensDClbZ7yFTMrMSAlar0jmgffsyDdIUQFcjABoimkyj8Fim7UtbEY2arVSuj7 huangyifei@huangyifei-PC
+
+
+git init 初始化本地文件夹为 git 仓库
+## 合作
+git log 查看提交的版本
+git pull 将远端优先于本地的版本拉取到本地  让远端和本地同步
