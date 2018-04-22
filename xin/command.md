@@ -75,4 +75,11 @@ git pull 将远端优先于本地的版本拉取到本地  让远端和本地同
 linux 系统如何安装 node.js
 1.安装curl    sudo apt-get install curl
 2.安装 nvm（安装 node 版本管理）     curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash  
-3.使用 nvm 安装 node
+3.使用 nvm 安装 node nvm install v8.11.1
+
+npm install jquery --save 使用npm 安装非工具类  
+npm install webpack --save-dev 使用 npm 安装工具类 --save-dev可以使用 -D代替
+
+
+
+
