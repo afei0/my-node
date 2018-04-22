@@ -24,7 +24,7 @@
   * [第三节：vue-new](vue-new/3-state.md)
   * [第四节：vue-new](vue-new/4-form.md)
   * [Home](vue-new/index.md)
-* [第三章：命令行 markdown](xin/command.md)
+* [第三章：命令行 markdown](xin/common.md)
   * [第一节：命令行](xin/command.md)
   * [第二节：markdown语法](xin/markdown.md)
 * [Html笔记](html/html笔记.md)
