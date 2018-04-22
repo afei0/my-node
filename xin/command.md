@@ -29,7 +29,9 @@ git branch -r          查看远端分支
 git branch -a          查看远端和本地分支  
 git branch -d 分知名    删除分支  
 git branch -b 分知名    新建分支并切换过去  
-git checkout 分支名     切换分支      
+git checkout 分支名     切换分支    
+git merge 分支名        当前所在分支合并其他分支  
+git pull origin master 拉取主分支上的更新  当你在自己的分支上想要看主分支上其他同事提交到的更新
 
 主分支上的内容在 新建分支的时候    
 
@@ -37,6 +39,13 @@ git checkout 分支名     切换分支
 git push  -u origin dev    
 
 git status  
+
+## gh-pages
+
+github用户名.github.io 常客 直接访问仓库名 就可以访问index.html  
+若想要其他仓库达到同样效果 需要使用gh-pages分支 把需要展示的页面 放到 gh-pages分支下 然后提交之后 访问地址 github  用户名.github.io/仓库名
+
+     git push -u origin gh-pages
 
 
 
@@ -62,3 +71,8 @@ git init 初始化本地文件夹为 git 仓库
 ## 合作
 git log 查看提交的版本  
 git pull 将远端优先于本地的版本拉取到本地  让远端和本地同步  
+
+linux 系统如何安装 node.js
+1.安装curl    sudo apt-get install curl
+2.安装 nvm（安装 node 版本管理）     curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash  
+3.使用 nvm 安装 node
