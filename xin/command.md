@@ -1,4 +1,5 @@
 # 命令行
+
 --version 查看版本号
 pwd         查看当前位置  
 ls          查看当前位置的文件 不包含隐藏文件  
@@ -45,7 +46,17 @@ git status
 github用户名.github.io 常客 直接访问仓库名 就可以访问index.html  
 若想要其他仓库达到同样效果 需要使用gh-pages分支 把需要展示的页面 放到 gh-pages分支下 然后提交之后 访问地址 github  用户名.github.io/仓库名
 
-     git push -u origin gh-pages
+git push -u origin gh-pages
+
+
+npm i -g serve  安装 全局的 本地服务   系统的任何地方都可以使用该包的命令  
+npm i webpack -D  安装工具包  -D  
+serve .   启动服务  
+git 仓库根目录下的.gitignore 文件  是忽略上传文件  里面写的内容 上传的时候 不会上传到git       
+.gitignore 文件里面写文件夹名 例：node_modules  
+
+
+
 
 
 
@@ -72,14 +83,18 @@ git init 初始化本地文件夹为 git 仓库
 git log 查看提交的版本  
 git pull 将远端优先于本地的版本拉取到本地  让远端和本地同步  
 
-linux 系统如何安装 node.js
-1.安装curl    sudo apt-get install curl
+linux 系统如何安装 node.js  
+1.安装curl    sudo apt-get install curl  
 2.安装 nvm（安装 node 版本管理）     curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.31.1/install.sh | bash  
-3.使用 nvm 安装 node nvm install v8.11.1
+3.使用 nvm 安装 node nvm install v8.11.1  
 
-npm install jquery --save 使用npm 安装非工具类  
-npm install webpack --save-dev 使用 npm 安装工具类 --save-dev可以使用 -D代替
-<h1>1111</h1>
+uninstall  卸载  
+
+npm install jquery --save           使用npm 安装非工具类  
+npm install webpack --save-dev      使用 npm 安装工具类 --save-dev可以使用 -D代替  
+npm i jquery@1.11.1 --save          安装1.11.1版本的jquery  
+npm i jquery@1 --save               安装 1 版本下最大的版本  
+
 
 
 
