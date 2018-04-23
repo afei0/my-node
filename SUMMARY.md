@@ -16,7 +16,7 @@
 * [第三章：命令行 markdown](xin/common.md)
   * [第一节：命令行](xin/command.md)
   * [第二节：markdown语法](xin/markdown.md)
-  * [第二节：markdown语法](xin/es6.md)
+  * [第二节：es6](xin/es6.md)
 * [Html笔记](html/html笔记.md)
 * [api](vue-node/api.md)
   * [从服务器加载数据](vue-node/从服务器加载数据.md)
