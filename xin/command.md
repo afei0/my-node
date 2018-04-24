@@ -43,6 +43,12 @@ git status
 
 ## gh-pages
 
+git branch gh-pages  
+git checkout gh-pages  
+git push
+
+
+
 github用户名.github.io 常客 直接访问仓库名 就可以访问index.html  
 若想要其他仓库达到同样效果 需要使用gh-pages分支 把需要展示的页面 放到 gh-pages分支下 然后提交之后 访问地址 github  用户名.github.io/仓库名
 
