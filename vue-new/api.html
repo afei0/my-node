@@ -139,7 +139,7 @@
                 <a href="./">
             
                     
-                    第二章：vue
+                    第二章：vue 评论页面
             
                 </a>
             
@@ -153,7 +153,7 @@
                 <a href="vue-cli.html">
             
                     
-                    第一节：搭建vue环境
+                    第一节：搭建 vue 环境
             
                 </a>
             
@@ -166,7 +166,7 @@
                 <a href="edit.html">
             
                     
-                    第二节：添加vue组件
+                    第二节：添加 vue 组件
             
                 </a>
             
@@ -244,7 +244,7 @@
                 <a href="vue-store.html">
             
                     
-                    第八节：vue-添加评论
+                    第八节：vue-添加评论 store
             
                 </a>
             
@@ -257,7 +257,7 @@
                 <a href="mutation.html">
             
                     
-                    第九节：vue-修改store中的数据
+                    第九节：vue-修改 store 中的数据
             
                 </a>
             
@@ -270,7 +270,7 @@
                 <a href="action.html">
             
                     
-                    第十节：vue-
+                    第十节：vue-action
             
                 </a>
             
@@ -296,7 +296,7 @@
                 <a href="commentary.html">
             
                     
-                    第十一节：vue-发评论
+                    第十二节：vue-发评论
             
                 </a>
             
@@ -304,12 +304,64 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.13" data-path="node.html">
+        <li class="chapter " data-level="1.3.13" data-path="list.html">
+            
+                <a href="list.html">
+            
+                    
+                    第十三节：vue-文章列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.14" data-path="v-if.html">
+            
+                <a href="v-if.html">
+            
+                    
+                    第十四节：使用 v-if 应对初始值为空
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.15" data-path="comments.html">
+            
+                <a href="comments.html">
+            
+                    
+                    第十五节：处理数据关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.16" data-path="getter.html">
+            
+                <a href="getter.html">
+            
+                    
+                    第十六节：使用 Getter 简化代码
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.17" data-path="node.html">
             
                 <a href="node.html">
             
                     
-                    vue笔记
+                    vue 笔记
             
                 </a>
             
@@ -431,7 +483,7 @@
                 <a href="../es6/es61.html">
             
                     
-                    第二节：es6的class module
+                    第二节：es6 的 class module
             
                 </a>
             
@@ -462,7 +514,7 @@
                 <a href="../html/html笔记.html">
             
                     
-                    Html笔记
+                    Html 
             
                 </a>
             
@@ -520,7 +572,7 @@
                 <a href="../Environmental/antd-mobile.html">
             
                     
-                    创建antd-mobile开发环境
+                    创建 antd-mobile 开发环境
             
                 </a>
             
@@ -573,7 +625,67 @@
     
                                 <section class="normal markdown-section">
                                 
-                                
+                                <h1 id="api">API</h1>
+<p>&#x672C;&#x8282;&#x6765;&#x7528; json-server &#x6765;&#x642D;&#x5EFA;&#x6D4B;&#x8BD5; API &#x3002;</p>
+<h3 id="&#x7528;-json-server-&#x642D;&#x5EFA;-api">&#x7528; json-server &#x642D;&#x5EFA; API</h3>
+<pre><code class="lang-js">npm i -g json-server
+</code></pre>
+<p>&#x5168;&#x5C40;&#x5B89;&#x88C5; json-server &#x3002;</p>
+<h5 id="apidbjson">/api/db.json</h5>
+<pre><code class="lang-js">{
+  <span class="hljs-string">&quot;comments&quot;</span>: [
+    {
+      <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;1&quot;</span>,
+      <span class="hljs-string">&quot;body&quot;</span>: <span class="hljs-string">&quot;&#x8BC4;&#x8BBA;1&quot;</span>
+    },
+    {
+      <span class="hljs-string">&quot;id&quot;</span>: <span class="hljs-string">&quot;2&quot;</span>,
+      <span class="hljs-string">&quot;body&quot;</span>: <span class="hljs-string">&quot;&#x8BC4;&#x8BBA;2&quot;</span>
+    }
+  ]
+}
+</code></pre>
+<p>&#x9879;&#x76EE;&#x9876;&#x7EA7;&#x4F4D;&#x7F6E;&#x521B;&#x5EFA; api &#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x91CC;&#x9762;&#x6DFB;&#x52A0; db.json &#x6587;&#x4EF6;&#x3002;Json &#x7684;&#x4E00;&#x5927;&#x7279;&#x70B9;&#x5C31;&#x662F;&#x5C5E;&#x6027;&#x540D;&#x90FD;&#x7528;&#x53CC;&#x5F15;&#x53F7;&#x5305;&#x88F9;&#xFF0C;&#x5C5E;&#x6027;&#x503C;&#x57FA;&#x672C;&#x4E0A;&#x4E5F;&#x90FD;&#x7528;&#x53CC;&#x5F15;&#x53F7;&#xFF0C;&#x4E0D;&#x8981;&#x7528;&#x5355;&#x5F15;&#x53F7;&#x3002;</p>
+<h5 id="cd-api-&#x547D;&#x4EE4;&#x884C;">cd api/ &#x547D;&#x4EE4;&#x884C;</h5>
+<pre><code class="lang-js">json-server --watch db.json -p <span class="hljs-number">3008</span>
+</code></pre>
+<p>&#x8FDB;&#x5165; db.json &#x6240;&#x5728;&#x7684;&#x6587;&#x4EF6;&#x5939;&#xFF0C;&#x542F;&#x52A8; json-server &#xFF0C;--watch &#x4E4B;&#x540E;&#x8DDF; db.json &#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x7136;&#x540E; -p &#x4E4B;&#x540E;&#x8DDF;&#x7AEF;&#x53E3;&#x53F7;&#xFF0C;&#x8FD9;&#x91CC;&#x4F7F;&#x7528; 3008 &#x505A;&#x7AEF;&#x53E3;&#x53F7;&#x3002;<br>&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#xFF0C;&#x8BBF;&#x95EE; localhost:3008/comments &#x80FD;&#x591F;&#x663E;&#x793A;&#x8BC4;&#x8BBA;&#x6570;&#x7EC4;&#xFF0C;&#x8BBF;&#x95EE; localhost:3008/comments/1 &#x80FD;&#x591F;&#x663E;&#x793A; id &#x4E3A; 1 &#x7684;&#x8BC4;&#x8BBA;&#x5BF9;&#x8C61;&#x3002;&#x8FD9;&#x6837;&#x8868;&#x793A; api server &#x5C31;&#x642D;&#x5EFA;&#x597D;&#x4E86;&#x3002;</p>
+<h3 id="&#x52A0;&#x8F7D;-api-&#x6570;&#x636E;">&#x52A0;&#x8F7D; api &#x6570;&#x636E;</h3>
+<p>&#x6765;&#x7528; api &#x63D0;&#x4F9B;&#x7684; comments &#x6570;&#x7EC4;&#x586B;&#x5145; vuex store &#x3002;</p>
+<pre><code class="lang-js">npm i axios
+</code></pre>
+<p>&#x5148;&#x6765;&#x5B89;&#x88C5; axios &#x3002;</p>
+<h5 id="appvue">App.vue</h5>
+<pre><code class="lang-js">  created: <span class="hljs-function"><span class="hljs-keyword">function</span> (<span class="hljs-params"></span>) </span>{
+    <span class="hljs-keyword">this</span>.$store.dispatch({ type: <span class="hljs-string">&apos;loadComments&apos;</span> })
+  }
+</code></pre>
+<p>App.vue &#x4E2D;&#x6DFB;&#x52A0;&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570; created &#xFF0C;&#x5F53; App &#x7EC4;&#x4EF6;&#x52A0;&#x8F7D;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x81EA;&#x52A8;&#x53D1;&#x51FA;&#x4E00;&#x4E2A; action &#x53EB;&#x505A; loadComments &#x3002;</p>
+<h5 id="modulescommentsjs">modules/comments.js</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> axios <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;axios&apos;</span>
+
+<span class="hljs-keyword">const</span> state = {
+  all: []
+}
+
+<span class="hljs-keyword">const</span> mutations = {
+  loadComments(state, comments) {
+    state.all = comments
+  }
+}
+
+<span class="hljs-keyword">const</span> actions = {
+  loadComments({ commit }) {
+    <span class="hljs-keyword">const</span> uri = <span class="hljs-string">&apos;http://localhost:3008/comments&apos;</span>
+    axios.get(uri).then(res =&gt; {
+      <span class="hljs-keyword">let</span> comments = res.data
+      commit(<span class="hljs-string">&apos;loadComments&apos;</span>, comments)
+    })
+  }
+}
+</code></pre>
+<p>modules/comments.js &#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x5BFC;&#x5165; axios &#x3002;&#x6765;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x540D;&#x4E3A; loadComments &#x7684; action &#x3002;<br>&#x628A; API &#x94FE;&#x63A5;&#x5B58;&#x653E;&#x5230; uri &#x5E38;&#x91CF;&#x4E2D;&#xFF0C;&#x4F7F;&#x7528; axios &#x53D1; get &#x8BF7;&#x6C42;&#x5230; API &#xFF0C;&#x8FD4;&#x56DE;&#x7684;&#x6570;&#x636E; res.data &#x4E2D;&#x5C31;&#x53EF;&#x4EE5;&#x62FF;&#x5230;&#x8BC4;&#x8BBA;&#x6570;&#x7EC4;&#x4E86;&#x3002;&#x4F46;&#x662F; action &#x81EA;&#x5DF1;&#x662F;&#x4E0D;&#x88AB;&#x5141;&#x8BB8;&#x4FEE;&#x6539; state &#x7684;&#xFF0C;&#x6240;&#x4EE5; commit &#x4E5F;&#x5C31;&#x662F;&#x6267;&#x884C;&#x4E00;&#x4E2A;&#x540C;&#x540D;&#x7684; mutation &#xFF0C;&#x628A; comments &#x53D1;&#x9001;&#x7ED9; mutation &#x3002;<br>&#x5230; mutations &#x5BF9;&#x8C61;&#x4E2D;&#x6765;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A; mutation &#x53EB;&#x505A; loadComments &#x3002;&#x91CC;&#x9762;&#x7684;&#x4EFB;&#x52A1;&#x5C31;&#x662F;&#x7528;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42;&#x5F97;&#x5230;&#x7684; comments &#x6570;&#x7EC4;&#xFF0C;&#x586B;&#x5145; state.all &#x3002;<br>state.all &#x672C;&#x6765;&#x7684;&#x6570;&#x636E;&#x5C31;&#x53EF;&#x4EE5;&#x5220;&#x9664;&#x4E86;&#xFF0C;&#x4FDD;&#x7559; all &#x4E3A;&#x7A7A;&#x6570;&#x7EC4;&#x3002;<br>&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8BC4;&#x8BBA;&#x4F9D;&#x7136;&#x80FD;&#x591F;&#x6B63;&#x786E;&#x663E;&#x793A;&#xFF0C;&#x8868;&#x793A;&#x52A0;&#x8F7D; API &#x6570;&#x636E;&#x7684;&#x64CD;&#x4F5C;&#x6210;&#x529F;&#x4E86;&#x3002;</p>
+
                                 
                                 </section>
                             
@@ -600,12 +712,12 @@
 
             
                 
-                <a href="action.html" class="navigation navigation-prev " aria-label="Previous page: 第十节：vue-">
+                <a href="action.html" class="navigation navigation-prev " aria-label="Previous page: 第十节：vue-action">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="commentary.html" class="navigation navigation-next " aria-label="Next page: 第十一节：vue-发评论">
+                <a href="commentary.html" class="navigation navigation-next " aria-label="Next page: 第十二节：vue-发评论">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -616,7 +728,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"第十一节：vue-API","level":"1.3.11","depth":2,"next":{"title":"第十一节：vue-发评论","level":"1.3.12","depth":2,"path":"vue-new/commentary.md","ref":"vue-new/commentary.md","articles":[]},"previous":{"title":"第十节：vue-","level":"1.3.10","depth":2,"path":"vue-new/action.md","ref":"vue-new/action.md","articles":[]},"dir":"neutral"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"vue-new/api.md","mtime":"2018-04-26T06:50:18.666Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-26T09:02:07.037Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"第十一节：vue-API","level":"1.3.11","depth":2,"next":{"title":"第十二节：vue-发评论","level":"1.3.12","depth":2,"path":"vue-new/commentary.md","ref":"vue-new/commentary.md","articles":[]},"previous":{"title":"第十节：vue-action","level":"1.3.10","depth":2,"path":"vue-new/action.md","ref":"vue-new/action.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"vue-new/api.md","mtime":"2018-04-27T02:27:11.059Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-27T08:19:52.223Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
