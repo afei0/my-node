@@ -80,15 +80,21 @@ export default new Router({
             component:Home
         },
         {
-            path: '/post',
+            path: '/post/:id',  //:id   动态路由
             component: Post
         }
     ],
     mode: 'history',
-
-    path: '/post/:id',  :id   动态路由
     //mode 模式   切换到history模式   去掉 #
+
 })
+---
+const actions = {
+    addComment({ commit },{ comment }){
+      // { } 参数中的解构赋值
+    commit('addComment')
+    }
+}
 
 --
 

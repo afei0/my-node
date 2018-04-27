@@ -1,4 +1,4 @@
-# mutation
+# mutation(改变)
 
 ## 本节来修改 store 中的数据。
 
