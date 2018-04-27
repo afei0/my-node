@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>第六节：vue-路由 · GitBook</title>
+        <title>第八节：vue-添加评论 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="route.html" />
+    <link rel="next" href="mutation.html" />
     
     
-    <link rel="prev" href="attribute.html" />
+    <link rel="prev" href="route.html" />
     
 
     </head>
@@ -213,7 +213,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3.6" data-path="router.html">
+        <li class="chapter " data-level="1.3.6" data-path="router.html">
             
                 <a href="router.html">
             
@@ -239,7 +239,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.8" data-path="vue-store.html">
+        <li class="chapter active" data-level="1.3.8" data-path="vue-store.html">
             
                 <a href="vue-store.html">
             
@@ -558,7 +558,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >第六节：vue-路由</a>
+        <a href=".." >第八节：vue-添加评论</a>
     </h1>
 </div>
 
@@ -573,77 +573,113 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x8DEF;&#x7531;">&#x8DEF;&#x7531;</h1>
-<h3 id="&#x4F7F;&#x7528;-vue-router">&#x4F7F;&#x7528; vue-router</h3>
-<p>&#x6DFB;&#x52A0;vue-router&#x3002;  </p>
-<h3 id="&#x5B89;&#x88C5;">&#x5B89;&#x88C5;</h3>
-<pre><code class="lang-js">npm i vue-router
+                                <h1 id="vuex-store">vuex store</h1>
+<p>&#x4E0B;&#x4E00;&#x6B65;&#xFF0C;&#x6211;&#x5728; CommentBox &#x7EC4;&#x4EF6;&#x4E2D;&#xFF0C;&#x6DFB;&#x52A0;&#x8BC4;&#x8BBA;&#xFF0C;&#x5E0C;&#x671B;&#x80FD;&#x591F;&#x5B9E;&#x65F6;&#x7684;&#x5728; PostBody &#x4E2D;&#x770B;&#x5230;&#x8BC4;&#x8BBA;&#x6570;&#x3002;&#x8FD9;&#x4E2A;&#x6D89;&#x53CA;&#x5230;&#x4E86;&#x7EC4;&#x4EF6;&#x95F4;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x901A;&#x4FE1;&#x3002;&#x5728; Vue &#x6846;&#x67B6;&#x4E0B;&#xFF0C;&#x662F;&#x901A;&#x8FC7; vuex &#x6765;&#x5B8C;&#x6210;&#x7684;&#x3002;&#x672C;&#x8282;&#x5148;&#x6765;&#x5B9E;&#x73B0;&#x628A;&#x6570;&#x636E;&#x642C;&#x5BB6;&#x5230; vuex &#x7684; store &#x4E2D;&#x3002;  </p>
+<h3 id="&#x88C5;&#x5305;">&#x88C5;&#x5305;</h3>
+<pre><code class="lang-js">npm i vuex
 </code></pre>
-<p>&#x5B89;&#x88C5; vue-router &#x8FD9;&#x4E2A;&#x5305;&#x3002;  </p>
-<h5 id="srcrouterjs">src/router.js</h5>
+<p>vuex &#x4F5C;&#x4E3A; npm &#x5305;&#x8FDB;&#x884C;&#x5B89;&#x88C5;&#x3002;  </p>
+<h3 id="&#x521B;&#x5EFA;-store">&#x521B;&#x5EFA; store</h3>
+<h5 id="storeindexjs">store/index.js</h5>
 <pre><code class="lang-js"><span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;vue&apos;</span>
-<span class="hljs-keyword">import</span> Router <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;vue-router&apos;</span>
-<span class="hljs-keyword">import</span> Home <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;@/components/Home&apos;</span>
-<span class="hljs-keyword">import</span> Post <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;@/components/Post&apos;</span>
+<span class="hljs-keyword">import</span> Vuex <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;vuex&apos;</span>
+<span class="hljs-keyword">import</span> comment <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./modules/comment&apos;</span>
 
-Vue.use(Router)
+Vue.use(Vuex)
 
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">new</span> Router({
-  routes: [
-    {
-      path: <span class="hljs-string">&apos;/&apos;</span>,
-      component: Home
-    },
-    {
-      path: <span class="hljs-string">&apos;/post&apos;</span>,
-      component: Post
-    }
-  ]
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">new</span> Vuex.Store({
+  modules: {
+    comment
+  }
 })
 </code></pre>
-<p>&#x4E3B;&#x4F53;&#x5185;&#x5BB9;&#x90FD;&#x5199;&#x5230; src/router.js &#x4E2D;&#xFF0C;&#x5BFC;&#x5165; Vue &#x5BFC;&#x5165; router &#x5BFC;&#x5165;&#x4E24;&#x4E2A;&#x9875;&#x9762;&#x7EC4;&#x4EF6; Home &#x548C; Post &#xFF0C;&#x8FD9;&#x91CC;&#x7684; at &#x7B26;&#xFF0C;&#x4EE3;&#x8868; src &#x6587;&#x4EF6;&#x5939;&#x3002;
-Vue.use &#x52A0;&#x8F7D; Router &#x4E2D;&#x95F4;&#x4EF6;&#x3002;<br>&#x4E0B;&#x9762; export &#x8DEF;&#x7531;&#x914D;&#x7F6E;&#x3002;&#x6BCF;&#x4E00;&#x6761;&#x8DEF;&#x7531;&#x8FD8;&#x662F;&#x4E24;&#x90E8;&#x5206;&#x7EC4;&#x6210;&#xFF0C;&#x4E00;&#x90E8;&#x5206;&#x662F;&#x7528;&#x6237;&#x8F93;&#x5165;&#x7684;&#x8DEF;&#x5F84;&#x662F;&#x4EC0;&#x4E48;&#xFF0C;&#x7528; path &#x6307;&#x5B9A;&#xFF0C;&#x53E6;&#x4E00;&#x90E8;&#x5206;&#x5C31;&#x662F;&#x7528;&#x6237;&#x5982;&#x679C;&#x8F93;&#x5165;&#x4E86;&#x8FD9;&#x4E2A;&#x8DEF;&#x5F84;&#xFF0C;&#x7A0B;&#x5E8F;&#x8BE5;&#x53BB;&#x6267;&#x884C;&#x54EA;&#x4E2A;&#x7EC4;&#x4EF6;&#xFF0C;&#x8FD9;&#x4E2A;&#x7531; component &#x5C5E;&#x6027;&#x6307;&#x5B9A;&#x3002;  </p>
-<h5 id="componentshomevue">components/Home.vue</h5>
-<pre><code class="lang-js">&lt;template&gt;
-  &lt;h1&gt;Home&lt;/h1&gt;
-&lt;/template&gt;
-
-&lt;script&gt;
-export default {
-  name: &apos;Home&apos;
+<p>&#x5BFC;&#x5165; Vue &#x548C; Vuex &#x5BFC;&#x5165;&#x4E00;&#x4E2A;&#x6A21;&#x5757; comment , Vue &#x5B9E;&#x4F8B;&#x4E2D;&#x52A0;&#x8F7D; Vuex &#xFF0C;&#x5BFC;&#x51FA;&#x4E00;&#x4E2A;&#x65B0;&#x5EFA;&#x7684; store &#xFF0C;store &#x53EF;&#x4EE5;&#x7531;&#x591A;&#x4E2A;&#x6570;&#x636E;&#x6A21;&#x677F;&#x7EC4;&#x6210;&#xFF0C;&#x76EE;&#x524D;&#x53EA;&#x6709;&#x4E00;&#x4E2A; comment &#x6A21;&#x5757;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5B66;&#x4E60;&#x8FC7; redux &#x7684;&#x8BDD;&#xFF0C;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x5176;&#x5B9E;&#x975E;&#x5E38;&#x7C7B;&#x4F3C;&#x4E8E;&#x4E00;&#x4E2A; reducer &#x3002;  </p>
+<h5 id="storemodulescommentjs">store/modules/comment.js</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> state = {
+  all: [
+    {
+      id: <span class="hljs-string">&apos;1&apos;</span>,
+      body: <span class="hljs-string">&apos;&#x8BC4;&#x8BBA;1&apos;</span>
+    },
+    {
+      id: <span class="hljs-string">&apos;2&apos;</span>,
+      body: <span class="hljs-string">&apos;&#x8BC4;&#x8BBA;2&apos;</span>
+    }
+  ]
 }
-&lt;/script&gt;
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  state
+}
 </code></pre>
-<p>Post &#x7EC4;&#x4EF6;&#x672C;&#x6765;&#x5C31;&#x6709;&#x4E86;&#xFF0C;&#x6240;&#x4EE5;&#x6765;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A; Home &#x7EC4;&#x4EF6;&#x3002;  </p>
+<p>&#x6A21;&#x5757;&#x6587;&#x4EF6; comment.js &#x4E2D;&#xFF0C;&#x5B9A;&#x4E49;&#x521D;&#x59CB;&#x5316;&#x72B6;&#x6001;&#x503C; state &#xFF0C;&#x8BC4;&#x8BBA;&#x6570;&#x7EC4;&#x4F5C;&#x4E3A; all &#x5C5E;&#x6027;&#x7684;&#x503C;&#x6765;&#x5B58;&#x653E;&#x3002;&#x5BFC;&#x51FA; state &#x3002;</p>
 <h5 id="srcmainjs">src/main.js</h5>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> router <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./router&apos;</span>
-<span class="hljs-comment">/* eslint-disable no-new */</span>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> store <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./store&apos;</span>
+<span class="hljs-comment">// import store from &apos;./store/index.js&apos;</span>
+
 <span class="hljs-keyword">new</span> Vue({
-  el: <span class="hljs-string">&apos;#app&apos;</span>,
-  router
+  store,
+})
+main.js &#x4E2D;&#x5BFC;&#x5165;&#x5E76;&#x52A0;&#x8F7D; store &#x3002;
+CommentBox.vue
+    computed: {
+      comments() { <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.$store.state.comment.all },
+      reversedComments() { <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.comments.slice().reverse() }
+    }
 </code></pre>
-<p>// main.js &#x4E2D;&#x5BFC;&#x5165;&#x914D;&#x7F6E;&#xFF0C;&#x5E76;&#x4E14;&#x521D;&#x59CB;&#x5316; Vue &#x5B9E;&#x4F8B;&#x7684;&#x65F6;&#x5019;&#x6765;&#x52A0;&#x8F7D;&#x5B83;&#x3002;</p>
-<h5 id="appvue">App.vue</h5>
-<pre><code class="lang-js">&lt;template&gt;
-  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">router-view</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">router-view</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span></span>
+<p>comments &#x6570;&#x636E;&#x5DF2;&#x7ECF;&#x79FB;&#x52A8;&#x5230;&#x4E86; store &#x7684;&#x6A21;&#x5757;&#x4E2D;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x5220;&#x9664;&#x4E86;&#xFF0C;&#x53D6;&#x800C;&#x4EE3;&#x4E4B;&#x7684;&#x662F;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A; comments &#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x662F; this.$store.comment.all &#x3002;<br>&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8BC4;&#x8BBA;&#x5217;&#x8868;&#x7167;&#x5E38;&#x53EF;&#x4EE5;&#x663E;&#x793A;&#x3002;&#x4E0B;&#x4E00;&#x6B65;&#xFF0C;&#x6211;&#x5728; CommentBox &#x7EC4;&#x4EF6;&#x4E2D;&#xFF0C;&#x6DFB;&#x52A0;&#x8BC4;&#x8BBA;&#xFF0C;&#x5E0C;&#x671B;&#x80FD;&#x591F;&#x5B9E;&#x65F6;&#x7684;&#x5728; PostBody &#x4E2D;&#x770B;&#x5230;&#x8BC4;&#x8BBA;&#x6570;&#x3002;&#x8FD9;&#x4E2A;&#x6D89;&#x53CA;&#x5230;&#x4E86;&#x7EC4;&#x4EF6;&#x95F4;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x901A;&#x4FE1;&#x3002;&#x5728; Vue &#x6846;&#x67B6;&#x4E0B;&#xFF0C;&#x662F;&#x901A;&#x8FC7; vuex &#x6765;&#x5B8C;&#x6210;&#x7684;&#x3002;&#x672C;&#x8282;&#x5148;&#x6765;&#x5B9E;&#x73B0;&#x628A;&#x6570;&#x636E;&#x642C;&#x5BB6;&#x5230; vuex &#x7684; store &#x4E2D;&#x3002;  </p>
+<h3 id="&#x88C5;&#x5305;">&#x88C5;&#x5305;</h3>
+<pre><code class="lang-js">npm i vuex
 </code></pre>
-<p>&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x91CD;&#x5927;&#x7684;&#x95EE;&#x9898;&#x6CA1;&#x6709;&#x89E3;&#x51B3;&#xFF0C;&#x5C31;&#x662F;&#x4E00;&#x65E6;&#x7EC4;&#x4EF6;&#x8981;&#x663E;&#x793A;&#xFF0C;&#x5230;&#x5E95;&#x8981;&#x663E;&#x793A;&#x5230;&#x4EC0;&#x4E48;&#x4F4D;&#x7F6E;&#xFF0C;&#x4E8E;&#x662F;&#x8981;&#x5230; App.vue &#x4E2D;&#xFF0C;&#x6DFB;&#x52A0; router-view &#xFF0C;&#x6839;&#x636E;&#x5B98;&#x65B9;&#x7684;&#x5199;&#x6CD5;&#xFF0C;&#x8FD9;&#x91CC;&#x4E0D;&#x4F7F;&#x7528;&#x81EA;&#x95ED;&#x548C;&#x6807;&#x7B7E;&#x3002;<br>&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#xFF0C;&#x8BBF;&#x95EE; / &#x53EF;&#x4EE5;&#x770B;&#x5230; Home &#x7EC4;&#x4EF6;&#xFF0C;&#x8BBF;&#x95EE; /post &#x53EF;&#x4EE5;&#x770B;&#x5230; Post &#x7EC4;&#x4EF6;&#x3002;<br>&#x53BB;&#x6389;&#x8DEF;&#x7531;&#x4E2D;&#x7684; hash<br>vue-router &#x9ED8;&#x8BA4;&#x91C7;&#x7528;&#x54C8;&#x5E0C;&#x8DEF;&#x7531;&#xFF0C;&#x6240;&#x4EE5;&#x94FE;&#x63A5;&#x4E2D;&#x4F1A;&#x9ED8;&#x8BA4;&#x6709;&#x54C8;&#x5E0C;&#x7B26;&#x3002;  </p>
-<h5 id="routerjs">router.js</h5>
-<pre><code class="lang-js">mode: <span class="hljs-string">&apos;history&apos;</span>,
+<p>vuex &#x4F5C;&#x4E3A; npm &#x5305;&#x8FDB;&#x884C;&#x5B89;&#x88C5;&#x3002;</p>
+<h3 id="&#x521B;&#x5EFA;-store">&#x521B;&#x5EFA; store</h3>
+<pre><code class="lang-js">store/index.js
+<span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;vue&apos;</span>
+<span class="hljs-keyword">import</span> Vuex <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;vuex&apos;</span>
+<span class="hljs-keyword">import</span> comment <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./modules/comment&apos;</span>
+
+Vue.use(Vuex)
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">new</span> Vuex.Store({
+  modules: {
+    comment
+  }
+})
 </code></pre>
-<p>router.js &#x7684;&#x8DEF;&#x7531;&#x914D;&#x7F6E;&#x5BF9;&#x8C61;&#x4E2D;&#xFF0C;&#x6DFB;&#x52A0; mode history &#xFF0C;&#x5C31;&#x4F1A;&#x8C03;&#x7528;&#x6D4F;&#x89C8;&#x5668;&#x5E95;&#x5C42;&#x7684; history &#x63A5;&#x53E3;&#xFF0C;&#x6765;&#x8BA9;&#x5355;&#x9875;&#x9762;&#x5E94;&#x7528;&#x770B;&#x4E0A;&#x53BB;&#x6709;&#x591A;&#x4E2A;&#x9875;&#x9762;&#x7684;&#x6548;&#x679C;&#x3002;<br>&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x4E0D;&#x5E26;&#x54C8;&#x5E0C;&#x7B26;&#x7684;&#x94FE;&#x63A5;&#x4E86;&#x3002;<br>&#x4F7F;&#x7528;&#x94FE;&#x63A5;  </p>
-<h5 id="homevue">Home.vue</h5>
-<pre><code class="lang-js">&lt;template&gt;
-  <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;home&quot;</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Home<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
-    <span class="hljs-tag">&lt;<span class="hljs-name">router-link</span> <span class="hljs-attr">to</span>=<span class="hljs-string">&quot;post&quot;</span>&gt;</span>Post<span class="hljs-tag">&lt;/<span class="hljs-name">router-link</span>&gt;</span>
-  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-name">template</span>&gt;</span></span>
+<p>&#x5BFC;&#x5165; Vue &#x548C; Vuex &#x5BFC;&#x5165;&#x4E00;&#x4E2A;&#x6A21;&#x5757; comment , Vue &#x5B9E;&#x4F8B;&#x4E2D;&#x52A0;&#x8F7D; Vuex &#xFF0C;&#x5BFC;&#x51FA;&#x4E00;&#x4E2A;&#x65B0;&#x5EFA;&#x7684; store &#xFF0C;store &#x53EF;&#x4EE5;&#x7531;&#x591A;&#x4E2A;&#x6570;&#x636E;&#x6A21;&#x677F;&#x7EC4;&#x6210;&#xFF0C;&#x76EE;&#x524D;&#x53EA;&#x6709;&#x4E00;&#x4E2A; comment &#x6A21;&#x5757;&#xFF0C;&#x5982;&#x679C;&#x4F60;&#x5B66;&#x4E60;&#x8FC7; redux &#x7684;&#x8BDD;&#xFF0C;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x5176;&#x5B9E;&#x975E;&#x5E38;&#x7C7B;&#x4F3C;&#x4E8E;&#x4E00;&#x4E2A; reducer &#x3002;  </p>
+<h5 id="storemodulescommentjs">store/modules/comment.js</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> state = {
+  all: [
+    {
+      id: <span class="hljs-string">&apos;1&apos;</span>,
+      body: <span class="hljs-string">&apos;&#x8BC4;&#x8BBA;1&apos;</span>
+    },
+    {
+      id: <span class="hljs-string">&apos;2&apos;</span>,
+      body: <span class="hljs-string">&apos;&#x8BC4;&#x8BBA;2&apos;</span>
+    }
+  ]
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  state
+}
 </code></pre>
-<p>Home &#x7EC4;&#x4EF6;&#x4E2D;&#xFF0C;&#x6DFB;&#x52A0; router-link &#x8FDB;&#x6765;&#xFF0C; to &#x5C5E;&#x6027;&#x4E2D;&#xFF0C;&#x5199;&#x94FE;&#x63A5;&#x8DEF;&#x5F84;&#x3002;<br>&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#xFF0C;&#x70B9;&#x4E00;&#x4E0B; Post &#x94FE;&#x63A5;&#xFF0C;&#x53D1;&#x73B0;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x65E0;&#x5237;&#x65B0;&#x8DF3;&#x8F6C;&#x3002;  </p>
+<p>&#x6A21;&#x5757;&#x6587;&#x4EF6; comment.js &#x4E2D;&#xFF0C;&#x5B9A;&#x4E49;&#x521D;&#x59CB;&#x5316;&#x72B6;&#x6001;&#x503C; state &#xFF0C;&#x8BC4;&#x8BBA;&#x6570;&#x7EC4;&#x4F5C;&#x4E3A; all &#x5C5E;&#x6027;&#x7684;&#x503C;&#x6765;&#x5B58;&#x653E;&#x3002;&#x5BFC;&#x51FA; state &#x3002;</p>
+<h5 id="srcmainjs">src/main.js</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> store <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./store&apos;</span>
+
+<span class="hljs-keyword">new</span> Vue({
+  store,
+})
+main.js &#x4E2D;&#x5BFC;&#x5165;&#x5E76;&#x52A0;&#x8F7D; store &#x3002;
+CommentBox.vue
+    computed: {
+      comments() { <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.$store.state.comment.all },
+      reversedComments() { <span class="hljs-keyword">return</span> <span class="hljs-keyword">this</span>.comments.slice().reverse() }
+    }
+</code></pre>
+<p>comments &#x6570;&#x636E;&#x5DF2;&#x7ECF;&#x79FB;&#x52A8;&#x5230;&#x4E86; store &#x7684;&#x6A21;&#x5757;&#x4E2D;&#xFF0C;&#x6240;&#x4EE5;&#x8FD9;&#x91CC;&#x53EF;&#x4EE5;&#x5220;&#x9664;&#x4E86;&#xFF0C;&#x53D6;&#x800C;&#x4EE3;&#x4E4B;&#x7684;&#x662F;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A; comments &#x8BA1;&#x7B97;&#x5C5E;&#x6027;&#xFF0C;&#x8FD4;&#x56DE;&#x503C;&#x662F; this.$store.comment.all &#x3002;<br>&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x8BC4;&#x8BBA;&#x5217;&#x8868;&#x7167;&#x5E38;&#x53EF;&#x4EE5;&#x663E;&#x793A;&#x3002;   </p>
 
                                 
                                 </section>
@@ -671,12 +707,12 @@ export default {
 
             
                 
-                <a href="attribute.html" class="navigation navigation-prev " aria-label="Previous page: 第五节：vue-属性">
+                <a href="route.html" class="navigation navigation-prev " aria-label="Previous page: 第七节：vue-动态路由">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="route.html" class="navigation navigation-next " aria-label="Next page: 第七节：vue-动态路由">
+                <a href="mutation.html" class="navigation navigation-next " aria-label="Next page: 第九节：vue-修改store中的数据">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -687,7 +723,7 @@ export default {
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"第六节：vue-路由","level":"1.3.6","depth":2,"next":{"title":"第七节：vue-动态路由","level":"1.3.7","depth":2,"path":"vue-new/route.md","ref":"vue-new/route.md","articles":[]},"previous":{"title":"第五节：vue-属性","level":"1.3.5","depth":2,"path":"vue-new/attribute.md","ref":"vue-new/attribute.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"vue-new/router.md","mtime":"2018-04-26T02:41:38.911Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-26T09:02:07.037Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"第八节：vue-添加评论","level":"1.3.8","depth":2,"next":{"title":"第九节：vue-修改store中的数据","level":"1.3.9","depth":2,"path":"vue-new/mutation.md","ref":"vue-new/mutation.md","articles":[]},"previous":{"title":"第七节：vue-动态路由","level":"1.3.7","depth":2,"path":"vue-new/route.md","ref":"vue-new/route.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"vue-new/vue-store.md","mtime":"2018-04-26T07:33:34.581Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-04-26T09:02:07.037Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
