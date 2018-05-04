@@ -1,115 +1,117 @@
-前端页面分为三部分：结构层（html代码），表示层（css层叠样式表），行为层
-（javascript脚本）
+前端页面分为三部分：结构层（html 代码），表示层（css 层叠样式表），行为层（javascript 脚本）
 
 css 层叠样式表分为：1.外部样式 2.内部样式 3.内联样式（行内样式）
 
-pc端文字字号最小是12，默认是16
-页面中的栏目标题尽量用h3
+pc 端文字字号最小是 12，默认是 16
+页面中的栏目标题尽量用 h3
 
--moz-transform:rotate(7deg);             //-moz代表火狐内核识别码
--webkit-transform:rotate(7deg);         //-webkit代表谷歌内核识别码
--o-transform:rotate(7deg);               //-o代表欧朋【opera】内核识别码
+-moz-transform:rotate(7deg); //-moz 代表火狐内核识别码
+-webkit-transform:rotate(7deg); //-webkit 代表谷歌内核识别码
+-o-transform:rotate(7deg); //-o 代表欧朋【opera】内核识别码
 
 标签
-article      定义文章 
-aside        定义页面内容之外的内容 
-section      定义section部分  
-nav          定义导航链接 
-div          可以理解为盒子模型
-h1-6         标题，字体依次是由大到小
-br /         强制换行
-p            段落
-i            倾斜
-b            加粗
-em           强调
-strong       强烈强调
-span         特殊
-sub          下角标
-sup          上角标
-ul           无序列表
-li	   		列表项
-form			表单
-Textarea		文本域
-Input		输入框
-选择器：
-.n{color:red;}										类选择器
-#n{color:blue;}									 id选择器
-.t span{color:yellow;}  								后代选择器
-span+span{color:cyan;}  							相邻兄弟选择器
-.t > span{color:hotpink;} 								子集选择器
-li:nth-child										nth选择器
-odd     								 		奇数
-even     										偶数
-:after   			选择器在被选元素的内容后面插入内容。请使用content属性来指定要插
-入的内容。 
-	
-	
-						
- Css元素
-float                     						浮动   
-margin：0 auto            						水平居中  
-line-height               							垂直居中
-margin-top                						上边距  
-border-top    									上边框     
-border-bottom									下边框 
-solid                     						实线    
-background-image:url();   							背景图   
-background-repeat：no-repeat/repeat-x/repeat-y	   背景重复:不重复/水平重复/纵向重复  
-background-position 								背景图位置
-background-size x（横向）y（纵向）					背景图尺寸
-font-family                						字体
-font-weight:normal/bold/bolder 			字体加粗：正常/定义粗体字符/定义更粗的字符/	定义更细的字符 100-900 定义由细到粗的字符。400等同于normal，而700等同于blod
-sans-serif                							无衬线
-overflow:hidden            						溢出：隐藏
-Overflow:auto 									溢出部分可变为滚动条
-line-height                						行高：固定高度/倍数
-text-align:center/left/right          					文本居中/居左/居右
-front-style：oblique                  				字体风格：斜体
-word-spacing                						词间距（根据空格）
-letter-spacing              						字间距    
-text-indent                 						首行缩进    
-ctrl+y                      						恢复撤销   
-cover                       						把背景图扩展至足够大
-Contain											在div里把图片等比缩放
-a href                      						网址；路径
-list-style:none/circle/square/disc            去掉列表符号/空心圆/方块/实心圆（默认的）
-list-style-image：url             					用图片替代列表符号:（‘路径’）
-padding                     						内间距
-text-decoration:none/underline/line-through/overline    去掉下划线/下划线/中划线/上划线                  hover                       						鼠标经过
-display:block               						转换为块元素
-margin：50px 100px 20px     						2个数的时候:上下 左右  
-3个数的	时候：上 左右 下  
-4个	数的时候：顺时针（上、右、下、左）  
-<a href="网址" target="blank">前往</a>
-a:link                       						未访问的链接
-a:visited                     						已访问的链接
-a:hover                       					鼠标移动到链接上
-a:active                      					选定的链接
-_blank                        					在新窗口中打开被链接文档
-display:block/inline/inline-block/none      			转换为：块/行内/行状块/隐藏
-clear{clear:both;}           						清除浮动
-<div class="clear"></div>     						在最后一个浮动元素后加空标签
-dashed                        					虚线
-position：relative   		 						相对定位
-z-index       			 						层叠
-position:absolute       	 						绝对定位
-position:fixed                 	 				固定定位
-boder-radius                     					圆角
-text-shadow:h-shadow/v-shadow/blur/color			文本阴影效果/必需。水平阴影的位置，允许负值。/必需。垂直阴影的位置，允许负值。/可选。模糊的距离/可选。阴影的颜色
-linear-gradient  线性渐变  to right 从左到右渐变  to bottom right   往右下方渐变角度定位（deg代表度数 ，颜色）
-Focus											焦点
-Box-shadow：h-shadow/v-shadow/blur/spread/color/inset							
-给框添加一个货多个阴影:必需。水平阴影的位置，允许负值。/必需。垂直阴影的位置，允许负值。/可选。模糊的距离/可选。阴影的尺寸。/阴影的颜色/将外部阴影改为内部阴影。
-Cursor     光标。    Default  默认光标；auto  默认。浏览器设置的光标；pointer 光标		呈现为指示链接的指针（一只手）
-Background-origin：padding-box         背景图相对于	内边距框来定位
-Background-origin：border-box 			背景图相对于边框盒来定位
-Background-origin：content-box          背景图相对于内容框来定位
-Background-clip						规定背景的绘制区域
-Opacity								透明
-Vertical-align                  设置元素的垂直对齐方式。
-dotted							点状边框
-max-width						把img图片放到足够大
-引用字体的格式：
+article 定义文章  
+aside 定义页面内容之外的内容  
+section 定义 section 部分  
+nav 定义导航链接  
+div 可以理解为盒子模型  
+h1-6 标题，字体依次是由大到小  
+br / 强制换行  
+p 段落  
+i 倾斜  
+b 加粗  
+em 强调  
+strong 强烈强调  
+span 特殊  
+sub 下角标  
+sup 上角标  
+ul 无序列表  
+li 列表项  
+form 表单  
+Textarea 文本域  
+Input 输入框  
+选择器：  
+.n{color:red;} 类选择器  
+#n{color:blue;} id 选择器  
+.t span{color:yellow;} 后代选择器  
+span+span{color:cyan;} 相邻兄弟选择器  
+.t > span{color:hotpink;} 子集选择器  
+li:nth-child nth 选择器  
+odd 奇数  
+even 偶数  
+:after 选择器在被选元素的内容后面插入内容。请使用 content 属性来指定要插入的内容。
+
+Css 元素  
+float 浮动  
+margin：0 auto 水平居中  
+line-height 垂直居中  
+margin-top 上边距  
+border-top 上边框  
+border-bottom 下边框  
+solid 实线  
+background-image:url(); 背景图  
+background-repeat：no-repeat/repeat-x/repeat-y 背景重复:不重复/水平重复/纵向重复  
+background-position 背景图位置  
+background-size x（横向）y（纵向） 背景图尺寸  
+font-family 字体  
+font-weight:normal/bold/bolder 字体加粗：正常/定义粗体字符/定义更粗的字符/ 定义更细的字符 100-900 定义由细到粗的字符。400 等同于 normal，而 700 等同于 blod  
+sans-serif 无衬线  
+overflow:hidden 溢出：隐藏  
+Overflow:auto 溢出部分可变为滚动条  
+line-height 行高：固定高度/倍数  
+text-align:center/left/right 文本居中/居左/居右  
+front-style：oblique 字体风格：斜体  
+word-spacing 词间距（根据空格）  
+letter-spacing 字间距  
+text-indent 首行缩进  
+ctrl+y 恢复撤销  
+cover 把背景图扩展至足够大  
+Contain 在 div 里把图片等比缩放  
+a href 网址；路径  
+list-style:none/circle/square/disc 去掉列表符号/空心圆/方块/实心圆（默认的）  
+list-style-image：url 用图片替代列表符号:（‘路径’）  
+padding 内间距  
+text-decoration:none/underline/line-through/overline 去掉下划线/下划线/中划线/上划线 hover 鼠标经过  
+display:block 转换为块元素  
+margin：50px 100px 20px 2 个数的时候:上下 左右  
+3 个数的 时候：上 左右 下  
+4 个 数的时候：顺时针（上、右、下、左）
+
+```
+<a href="网址" target="blank">前往</a>  
+```
+
+a:link 未访问的链接  
+a:visited 已访问的链接  
+a:hover 鼠标移动到链接上  
+a:active 选定的链接  
+\_blank 在新窗口中打开被链接文档  
+display:block/inline/inline-block/none 转换为：块/行内/行状块/隐藏  
+clear{clear:both;} 清除浮动
+
+<div class="clear"></div>     						在最后一个浮动元素后加空标签  
+dashed                        					虚线  
+position：relative   		 						相对定位  
+z-index       			 						层叠  
+position:absolute       	 						绝对定位  
+position:fixed                 	 				固定定位  
+boder-radius                     					圆角  
+text-shadow:h-shadow/v-shadow/blur/color			文本阴影效果/必需。水平阴影的位置，允许负值。/必需。垂直阴影的位置，允许负值。/可选。模糊的距离/可选。阴影的颜色  
+linear-gradient  线性渐变  to right 从左到右渐变  to bottom right   往右下方渐变角度定位（deg代表度数 ，颜色）  
+Focus											焦点  
+Box-shadow：h-shadow/v-shadow/blur/spread/color/inset
+给框添加一个货多个阴影:必需。水平阴影的位置，允许负值。/必需。垂直阴影的位置，允许负值。/可选。模糊的距离/可选。阴影的尺寸。/阴影的颜色/将外部阴影改为内部阴影。  
+Cursor     光标。    Default  默认光标；auto  默认。浏览器设置的光标；pointer 光标		呈现为指示链接的指针（一只手）  
+Background-origin：padding-box         背景图相对于	内边距框来定位  
+Background-origin：border-box 			背景图相对于边框盒来定位  
+Background-origin：content-box          背景图相对于内容框来定位  
+Background-clip						规定背景的绘制区域  
+Opacity								透明  
+Vertical-align                  设置元素的垂直对齐方式。  
+dotted							点状边框  
+max-width						把img图片放到足够大  
+引用字体的格式：  
+```
 @font-face{
 			font-family: 起的名字;
 			src:url('../fonts/BebasNeue-webfont.eot'),
@@ -118,29 +120,30 @@ max-width						把img图片放到足够大
 				url('../fonts/BebasNeue-webfont.svg');
 		}
 
-table							块级表格
-table-row							表格中的行
-table-cell							表格中的列	
-calc								计算
+````
+table								块级表格  
+table-row							表格中的行  
+table-cell							表格中的列
+calc								计算  
 
 
 
 表单元素
-input type="text"        	 		用户名
-input type=“password” 	 		密码
-input type="radio" name="#"     	与其他名称一致时，它就是单选按钮
-input type="checkbox"            	多选
-checked disabled                 	已选；必选
-input type="submit"              	提交
-input type="button"	value=””	 		空白按钮 、按钮的内容
-<Textarea rows=""  cols="" >		文本域 （默认的行）（默认的字符）
-select name="" id=""             	表单中的下拉菜单
-	<option>   <option/>     		表单中的下拉菜单项
+input type="text"        	 		用户名  
+input type=“password” 	 			密码  
+input type="radio" name="#"     	与其他名称一致时，它就是单选按钮  
+input type="checkbox"            	多选  
+checked disabled                 	已选；必选  
+input type="submit"              	提交  
+input type="button"	value=””	 	空白按钮 、按钮的内容  
+```<Textarea rows=""  cols="" >```	文本域 （默认的行）（默认的字符）  
+select name="" id=""             	表单中的下拉菜单  
+	<option>   <option/>    		表单中的下拉菜单项  
 
-<label for=”名字”>
-input type=“名字” id=“起的名字”
-</label>									在 label 元素内点击文本，就会触发此控件。
-input outline					轮廓，边框
+<label for=”名字”>  
+input type=“名字” id=“起的名字”  
+</label>									在 label 元素内点击文本，就会触发此控件。  
+input outline					轮廓，边框  
 
 
 
@@ -149,10 +152,10 @@ input outline					轮廓，边框
 
 块元素：（1 块级元素各占一行，是垂直方向布局的。  2 高度，行高以及外边距和内边距
 都可控制；  3 默认宽度始终是与浏览器宽度一样，与内容无关。 4 它可以容纳内联元素
-和其他块元素）
+和其他块元素）  
 
 行内元素：（1 行内元素会再一条直线上，是在同一水平线布局的。2 高，行高及外边距和
-内边距部分可改变； 3 宽度只与内容有关； 4 行内元素只能容纳文本或者其他行内元素）
+内边距部分可改变； 3 宽度只与内容有关； 4 行内元素只能容纳文本或者其他行内元素）  
 
 
 
@@ -238,22 +241,22 @@ body{
 H5标签ie8 不识别问题
 1.css：article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block;}
 2.Head下面添加：
-<!--[if lt IE 9]> 
-<script> 
+<!--[if lt IE 9]>
+<script>
    (function() {
-     if (! 
+     if (!
      /*@cc_on!@*/
      0) return;
      var e = "abbr, article, aside, audio, canvas, datalist, details, dialog, eventsource, figure, footer, header, hgroup, mark, menu, meter, nav, output, progress, section, time, video".split(', ');
      var i= e.length;
      while (i--){
          document.createElement(e[i])
-     } 
-})() 
+     }
+})()
 </script>
 <![endif]-->
 IE6bug汇总
-双边距：一个div盒子如果设置了margin，并且该div设置了float浮动，那么在IE6下便会产生双边距问题：如果设置 float:left 那么左边距会是原来margin的两倍；如果是float:right，那么右边距会是原来margin的两倍。      解决办法：_display: inline 
+双边距：一个div盒子如果设置了margin，并且该div设置了float浮动，那么在IE6下便会产生双边距问题：如果设置 float:left 那么左边距会是原来margin的两倍；如果是float:right，那么右边距会是原来margin的两倍。      解决办法：_display: inline
 3像素：3像素bug是IE6的一个著名的bug，当浮动元素与非浮动元素相邻时，这个3像素的Bug就会	出现。 在浮动元素上加上_margin-right:-3px;
 微型高度这个BUG的产生原因很简单，IE不允许元件的高度小于字体的高度，所以，下面的fix是设置上字体大小。解决方案一{font-size:0px;} 解决方案二{overflow:hidden;}(最佳)
 绝对定位：在IE6下面 position:absolute的绝对定位层前面紧邻的那个层如果有用到“float” css浮动属性会导致这个绝对定位层无法显示解决办法就是在这个绝对定位浮动层前面插入一个清除浮动的层（或者空div）
@@ -264,27 +267,27 @@ IE6bug汇总
 	</script>
 	<![endif]–>
 IE6不识别最大最小宽高的问题。
-max-width:1000px; 
-_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1000?"1000px":""); 
-overflow:hidden; 
+max-width:1000px;
+_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<1000?"1000px":"");
+overflow:hidden;
 
-min-width:1000px; 
-	_width:expression((document.documentElement.clientWidth||document.body.clientWidth)>1000?"1	000px":""); 
+min-width:1000px;
+	_width:expression((document.documentElement.clientWidth||document.body.clientWidth)>1000?"1	000px":"");
 
-max-width:620px; 
-	min-width:1px; 
-	_width:expression(this.scrollWidth > 620 ? "620px":(this.scrollWidth < 1? "1px":"auto")); 
+max-width:620px;
+	min-width:1px;
+	_width:expression(this.scrollWidth > 620 ? "620px":(this.scrollWidth < 1? "1px":"auto"));
 
-max-height:1000px; 
-	_height:expression((document.documentElement.clientHeight||document.body.clientHeight)<1000?"	1000px":""); 
-	overflow:hidden; 
+max-height:1000px;
+	_height:expression((document.documentElement.clientHeight||document.body.clientHeight)<1000?"	1000px":"");
+	overflow:hidden;
 
-min-height:1000px; 
-	_height:expression((document.documentElement.clientHeight||document.body.clientHeight)>1000?"	1000px":""); 
+min-height:1000px;
+	_height:expression((document.documentElement.clientHeight||document.body.clientHeight)>1000?"	1000px":"");
 
-Max-Height:620px; 
-	Min-Height:40px; 
-	_height:expression(this.scrollHeight > 620 ? "620px":(this.scrollHeight < 40 ? "40px":"auto")); 
+Max-Height:620px;
+	Min-Height:40px;
+	_height:expression(this.scrollHeight > 620 ? "620px":(this.scrollHeight < 40 ? "40px":"auto"));
 
 
 360浏览器
@@ -297,7 +300,7 @@ chrome=1：谷歌的外挂插件Google Chrome Frame（谷歌内嵌浏览器框�
 
 
 Chrome谷歌浏览器下不支持css字体小于12px的解决办法
--webkit-transform : scale() 
+-webkit-transform : scale()
 @media screen and (-webkit-min-device-pixel-ratio:0) {   }chrome /safari
  @media screen and (-moz-images-in-menus:0) {   }ff   或者css后缀！important
 @media all and (min-width: 0px){  \0}opera
@@ -305,7 +308,7 @@ chrome=1：谷歌的外挂插件Google Chrome Frame（谷歌内嵌浏览器框�
 
 
 移动端兼容
-1	fixed元素无法点击 
+1	fixed元素无法点击
 场景：父元素设置position: fixed;
 子元素设置position: absolute;
 此时，如果父元素/子元素还设置了overflow: hidden 则出现“父元素遮挡该子元素“的bug。
@@ -358,7 +361,7 @@ js代码：严格区分大小写  非js语法要用“”或‘’包裹（字�
 $(this)		触发事件的这个元素
 event		事件对象
 event.preventDefault()并且在function加（event）				阻止事件默认跳转
-event.pageX		event.pageY			鼠标距离浏览器窗口的偏移位置 		
+event.pageX		event.pageY			鼠标距离浏览器窗口的偏移位置
 
 
 检测代码的方式：
@@ -414,10 +417,10 @@ val“”			空字符串
 a.trim（）			将a这个值的左右空白符删除
 a.clone（）			克隆一个一模一样的a
 a.remove（）			删除整个a元素，包括里面的内容
-.prop（要选的东西）				是否选中 
+.prop（要选的东西）				是否选中
 xx.each（function()｛要做的事｝）遍历xx集合中的所有元素，依次做function里面的事
 select表单元素	.val（）获取被选中的option的value值
-.change				给checkbox绑定点击事件时，使用change			
+.change				给checkbox绑定点击事件时，使用change
 .keydown				键盘按下
 .keyup				键盘弹起
 .ldypress				按键盘
@@ -434,6 +437,5 @@ $（window）.scrollTop（）			获取窗口滚动条距顶部的距离
 xx.length						获取xx这个集合元素中的个数
 	例：console.log（$（“ul>li”）.length）
 .on								可以绑定多个事件
-event						事件对象		
-
-			
+event						事件对象
+````
