@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>第一节：react · GitBook</title>
+        <title>第四节：ES6 模块 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../vue-new/" />
+    <link rel="next" href="../html/html笔记.html" />
     
     
-    <link rel="prev" href="anzhuang.html" />
+    <link rel="prev" href="ajax.html" />
     
 
     </head>
@@ -102,9 +102,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="anzhuang.html">
+        <li class="chapter " data-level="1.2" data-path="../react/anzhuang.html">
             
-                <a href="anzhuang.html">
+                <a href="../react/anzhuang.html">
             
                     
                     第一章：react
@@ -116,9 +116,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.2.1" data-path="state.html">
+        <li class="chapter " data-level="1.2.1" data-path="../react/state.html">
             
-                <a href="state.html">
+                <a href="../react/state.html">
             
                     
                     第一节：react
@@ -658,9 +658,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8" data-path="../es6/">
+        <li class="chapter " data-level="1.8" data-path="./">
             
-                <a href="../es6/">
+                <a href="./">
             
                     
                     第七章：es6
@@ -672,9 +672,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.8.1" data-path="../es6/es6.html">
+        <li class="chapter " data-level="1.8.1" data-path="es6.html">
             
-                <a href="../es6/es6.html">
+                <a href="es6.html">
             
                     
                     第一节：es6
@@ -685,9 +685,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.2" data-path="../es6/es61.html">
+        <li class="chapter " data-level="1.8.2" data-path="es61.html">
             
-                <a href="../es6/es61.html">
+                <a href="es61.html">
             
                     
                     第二节：es6 的 class 模块 module
@@ -698,9 +698,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.3" data-path="../es6/ajax.html">
+        <li class="chapter " data-level="1.8.3" data-path="ajax.html">
             
-                <a href="../es6/ajax.html">
+                <a href="ajax.html">
             
                     
                     第三节：ajax
@@ -711,9 +711,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.8.4" data-path="../es6/es6module.html">
+        <li class="chapter active" data-level="1.8.4" data-path="es6module.html">
             
-                <a href="../es6/es6module.html">
+                <a href="es6module.html">
             
                     
                     第四节：ES6 模块
@@ -830,7 +830,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >第一节：react</a>
+        <a href=".." >第四节：ES6 模块</a>
     </h1>
 </div>
 
@@ -845,72 +845,62 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>&#x6539;&#x53D8; this &#x6307;&#x5411;</p>
-<p>bind</p>
-<p>&#x51FD;&#x6570;&#x540D;.bing(&#x5BF9;&#x8C61;)
-&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x548C;&#x539F;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x529F;&#x80FD;&#x4E00;&#x6837;&#xFF0C;&#x4F46;&#x662F;&#x51FD;&#x6570;&#x5185;&#x90E8;this&#x5DF2;&#x7ECF;&#x6307;&#x5411;&#x4E86; bind &#x65B9;&#x6CD5;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;
-super</p>
-<p>super&#x5173;&#x952E;&#x5B57;&#x53EA;&#x80FD;&#x591F;&#x4EE5;&#x6307;&#x5B9A;&#x7684;&#x5F62;&#x5F0F;&#x51FA;&#x73B0;&#x5728;&#x4EE5;&#x4E0B;&#x5730;&#x70B9;&#xFF1A;</p>
-<pre><code class="lang-js"><span class="hljs-number">1.</span> <span class="hljs-class"><span class="hljs-keyword">class</span>&#x8BED;&#x53E5;&#x5757;&#x5185;&#x7684;<span class="hljs-title">constructor</span>&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x5185;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;
-  <span class="hljs-title">class</span> <span class="hljs-title">B</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span> </span>{
-    <span class="hljs-keyword">constructor</span>(){
-        <span class="hljs-keyword">super</span>()
-    }
-  }
-<span class="hljs-number">2.</span> <span class="hljs-class"><span class="hljs-keyword">class</span>&#x8BED;&#x53E5;&#x5757;&#x5185;&#x7684;<span class="hljs-title">static</span>&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x5185;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;<span class="hljs-title">class</span> <span class="hljs-title">B</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span> </span>{
-    <span class="hljs-keyword">static</span> foo {
-        <span class="hljs-keyword">super</span>.test1() <span class="hljs-comment">// &#x76F8;&#x5F53;&#x4E8E;A.test1.call(this)</span>
-        <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">super</span>.test2 === A.test2)
-      }
-    }
-<span class="hljs-number">3.</span> <span class="hljs-class"><span class="hljs-keyword">class</span>&#x8BED;&#x53E5;&#x5757;&#x5185;&#x7684;&#x4E00;&#x822C;&#x65B9;&#x6CD5;&#xFF08;&#x975E;<span class="hljs-title">static</span>&#x6216;<span class="hljs-title">constructor</span>&#x51FD;&#x6570;&#xFF09;&#x7684;&#x5B9A;&#x4E49;&#x5185;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;
-  <span class="hljs-title">class</span> <span class="hljs-title">B</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span> </span>{
-    foo() {
-        <span class="hljs-keyword">super</span>.foo()
-    }
-  }
-<span class="hljs-number">4.</span> &#x5728;&#x5BF9;&#x8C61;&#x5B57;&#x9762;&#x91CF;&#x7684;&#x65B9;&#x6CD5;&#x7684;&#x5B9A;&#x4E49;&#x5185;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;<span class="hljs-keyword">let</span> a = {
-    foo() {
-        <span class="hljs-keyword">super</span>.test()
-      }
-    }
+                                <h1 id="es6-&#x6A21;&#x5757;&#x4E13;&#x9898;">ES6 &#x6A21;&#x5757;&#x4E13;&#x9898;</h1>
+<p>&#x4F20;&#x7EDF;&#x4E0A;&#x4E00;&#x4E2A;&#x5927;&#x7684; JS &#x9879;&#x76EE;&#xFF0C;&#x62C6;&#x5206;&#x6210;&#x51E0;&#x5341;&#x4E2A;&#x6587;&#x4EF6;&#x4E4B;&#x540E;&#xFF0C;&#x9700;&#x8981;&#x5206;&#x522B;&#x7528;&#x51E0;&#x5341;&#x4E2A; script &#x6807;&#x7B7E;&#xFF0C;&#x5BFC;&#x5165;&#x5230; html &#x4E2D;&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x662F;&#x5DF2;&#x7ECF;&#x88AB;&#x6DD8;&#x6C70;&#x7684;&#x3002;&#x540E;&#x6765; &#xFF0C;&#x4EBA;&#x4EEC;&#x5728; Nodejs &#x793E;&#x533A;&#xFF0C;&#x53D1;&#x660E;&#x4E86; commonjs &#x8BED;&#x6CD5;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x7528; module.exports &#x5BFC;&#x5165;&#xFF0C;&#x7528; require &#x5BFC;&#x5165;&#x3002;&#x4F46;&#x662F;&#x518D;&#x540E;&#x6765;&#xFF0C;&#x4EBA;&#x4EEC;&#x53D1;&#x660E;&#x4E86; ES6 &#x6A21;&#x5757;&#xFF0C;&#x7528; export &#x5BFC;&#x51FA;&#xFF0C;&#x7528; import &#x5BFC;&#x5165;&#xFF0C;&#x968F;&#x7740; ES6 &#x7684;&#x6D41;&#x884C;&#xFF0C;ES6 &#x6A21;&#x5757;&#x7528;&#x91CF;&#x4E0A;&#x9010;&#x6E10;&#x78BE;&#x538B; commonjs &#x6A21;&#x5757;&#x3002;</p>
+<h2 id="&#x4E3A;&#x4F55;&#x8981;&#x6709;&#x6A21;&#x5757;&#xFF1F;">&#x4E3A;&#x4F55;&#x8981;&#x6709;&#x6A21;&#x5757;&#xFF1F;</h2>
+<p>&#x6A21;&#x5757;&#x7684;&#x7B2C;&#x4E00;&#x5927;&#x610F;&#x4E49;&#x5728;&#x4E8E;&#x62C6;&#x5206;&#xFF0C;&#x7B2C;&#x4E8C;&#x5927;&#x610F;&#x4E49;&#x5728;&#x4E8E;&#x5C01;&#x88C5;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x6211;&#x5728;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x4E2D;&#x5B9A;&#x4E49;&#x548C;&#x4F7F;&#x7528;&#x4E86;&#x4E00;&#x4E2A;&#x4E34;&#x65F6;&#x7684;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x672C;&#x6A21;&#x5757;&#x5185;&#x4F7F;&#x7528;&#x3002;&#x90A3;&#x4E48;&#x5176;&#x4ED6;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x5373;&#x4F7F;&#x5BFC;&#x5165;&#x4E86;&#x8FD9;&#x4E2A;&#x6A21;&#x5757;&#xFF0C;&#x4F46;&#x662F;&#x6A21;&#x5757;&#x5185;&#x7684;&#x4E34;&#x65F6;&#x5168;&#x5C40;&#x53D8;&#x91CF;&#x53EA;&#x8981;&#x662F;&#x6CA1;&#x6709;&#x5BFC;&#x51FA;&#xFF0C;&#x90A3;&#x4E48;&#x5176;&#x4ED6;&#x4E2D;&#x6587;&#x4EF6;&#x4E2D;&#x5C31;&#x662F;&#x4E0D;&#x80FD;&#x8C03;&#x7528;&#x7684;&#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x5F62;&#x5F0F;&#x4E86;&#x826F;&#x597D;&#x7684;&#x5C01;&#x88C5;&#xFF0C;&#x907F;&#x514D;&#x4E86;&#x53D8;&#x91CF;&#x51B2;&#x7A81;&#x3002;&#x800C; script &#x6807;&#x7B7E;&#x5BFC;&#x5165;&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x7684;&#x53D8;&#x91CF;&#x9ED8;&#x8BA4;&#x90FD;&#x662F;&#x5168;&#x5C40;&#x7684;&#xFF0C;&#x5C31;&#x4F1A;&#x9020;&#x6210;&#x4E25;&#x91CD;&#x51B2;&#x7A81;&#xFF0C;&#x8FD9;&#x4E2A;&#x662F; script &#x6807;&#x7B7E;&#x5F62;&#x5F0F;&#x7684;&#x4E00;&#x5927;&#x5F0A;&#x75C5;&#x3002;
+ES6 &#x6A21;&#x5757;&#xFF0C;&#x6709;&#x4E24;&#x79CD;&#x5BFC;&#x5165;&#x5BFC;&#x51FA;&#x65B9;&#x5F0F;&#xFF0C;&#x4E00;&#x79CD;&#x662F;&#x547D;&#x540D;&#x5BFC;&#x51FA;&#xFF08; named export &#xFF09;&#xFF0C;&#x53E6;&#x5916;&#x4E00;&#x79CD;&#x662F;&#x9ED8;&#x8BA4;&#x5BFC;&#x51FA; &#xFF08; default export ) &#x3002;</p>
+<h2 id="&#x547D;&#x540D;&#x5BFC;&#x51FA;">&#x547D;&#x540D;&#x5BFC;&#x51FA;</h2>
+<p>&#x547D;&#x540D;&#x5BFC;&#x51FA;&#x7684;&#x597D;&#x5904;&#x662F;&#x4E00;&#x6B21;&#x53EF;&#x4EE5;&#x4ECE;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x4E2D;&#x5BFC;&#x51FA;&#x591A;&#x4E2A;&#x53D8;&#x91CF;&#x3002;</p>
+<h5 id="mainjs">main.js</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> sayHello = () =&gt; <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;hello&apos;</span>)
 
-    <span class="hljs-keyword">let</span> b = {
-        test() {
-            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;I&apos;m b.&quot;</span>)
-        }
-    }
+<span class="hljs-keyword">const</span> myString = <span class="hljs-string">&apos;Peter&apos;</span>
 
-    <span class="hljs-built_in">Object</span>.setPrototypeOf(a, b);
-    a.foo(); <span class="hljs-comment">// &quot;I&apos;m b.&quot;</span>
+<span class="hljs-keyword">const</span> myFun = () =&gt; {
+  sayHello()
+  <span class="hljs-built_in">console</span>.log(MySting)
+}
+
+myFun()
 </code></pre>
-<h3 id="state">state</h3>
-<p>state&#x72B6;&#x6001;&#xFF0C;&#x7EC4;&#x4EF6;&#x7684;state&#x6539;&#x53D8;&#xFF0C;&#x7EC4;&#x4EF6;&#x5C31;&#x4F1A;&#x91CD;&#x65B0;&#x6E32;&#x67D3;&#xFF0C;&#x9875;&#x9762;&#x4E5F;&#x5C31;&#x6539;&#x53D8;&#x4E86;
-react &#x7EC4;&#x4EF6;&#x9ED8;&#x8BA4;&#x6709;&#x4E00;&#x4E2A; state &#x5C5E;&#x6027;&#xFF0C;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;
-&#x5728;constructor&#x5185;&#x8BBE;&#x7F6E;state&#xFF0C;&#x7528;this.state = {&#x8BBE;&#x7F6E;&#x72B6;&#x6001;}
-&#x4F7F;&#x7528; setState &#x65B9;&#x6CD5;&#x4FEE;&#x6539; state &#x503C;
-&#x4E24;&#x4E2A;&#x88C5;&#x6001;&#x6765;&#x56DE;&#x5207;&#x56DE;&#xFF0C;&#x8BBE;&#x7F6E;active = true/false,&#x7136;&#x540E;&#x8BBE;&#x7F6E;&#x65F6;&#x7528; &#x975E; &#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;!this.state.active
-setState &#x662F;&#x5F02;&#x6B65;&#x65B9;&#x6CD5;(&#x5F02;&#x6B65;&#x975E;&#x963B;&#x585E;&#xFF0C;&#x540C;&#x6B65;&#x963B;&#x585E;)
-requestAanimationFrame &#x76F8;&#x5F53;&#x4E8E; setTimeout(&#x8FD9;&#x4E2A;&#x662F;&#x6839;&#x636E;&#x7535;&#x8111;&#x672C;&#x8EAB;&#x7684;&#x6027;&#x80FD; &#x6267;&#x884C;&#x5FEB;&#x6162;)
-&#x7EC4;&#x4EF6;&#x5185;&#x90E8;&#x7684;setInterval&#x8981;&#x5B9A;&#x4E49;&#x4E3A;&#x7EC4;&#x4EF6;&#x7684;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;</p>
-<h3 id="&#x5B50;&#x7236;&#x7EC4;&#x4EF6;&#x76F8;&#x4E92;&#x4EA4;&#x4E92;">&#x5B50;&#x7236;&#x7EC4;&#x4EF6;&#x76F8;&#x4E92;&#x4EA4;&#x4E92;</h3>
-<p>constructor &#x51FD;&#x6570;&#x5185;&#x90E8;&#x4E0D;&#x505A;&#x8BBE;&#x7F6E;&#x662F;&#x62FF;&#x4E0D;&#x5230;&#x7236;&#x7EC4;&#x4EF6;&#x4F20;&#x8FC7;&#x6765;&#x7684; props &#x7684;&#xFF0C;&#x60F3;&#x8981;&#x62FF;&#x5230;&#xFF0C;&#x9700;&#x8981;&#x5728; constructor &#x51FD;&#x6570;&#x4F20;&#x4E00;&#x4E2A; porps &#x53C2;&#x6570;&#xFF0C;&#x5E76;&#x4E14;&#x4E5F;&#x9700;&#x8981;&#x5728; super &#x65B9;&#x6CD5;&#x5185;&#x4F20;&#x4E00;&#x4E2A;&#x53C2;&#x6570; props &#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x5728; constructor &#x5185;&#x90E8;&#x83B7;&#x53D6;&#x5230; props
-state &#x7684;&#x503C; &#x4E00;&#x5B9A;&#x8981;&#x5B9A;&#x4E49;&#x6210;&#x5E38;&#x91CF;&#xFF0C;&#x4FEE;&#x6539;&#x7EC4;&#x4EF6;&#x72B6;&#x6001; state &#x53EA;&#x80FD;&#x7528; setState &#x65B9;&#x6CD5;&#x4FEE;&#x6539;</p>
-<h3 id="&#x7EC4;&#x4EF6;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;lifecycle">&#x7EC4;&#x4EF6;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;(lifecycle)</h3>
-<p>&#x7EC4;&#x4EF6;&#x5B9E;&#x4F8B;&#x88AB;&#x521B;&#x5EFA;&#x548C;&#x63D2;&#x5165;DOM&#x4E2D;&#x65F6;&#x8C03;&#x7528;&#x4E0B;&#x9762;&#x56DB;&#x4E2A;&#x65B9;&#x6CD5;&#xFF1A;
-constructor() &#x521D;&#x59CB;&#x5316; props &#x548C; state
-componentWillMount() &#x7EC4;&#x4EF6;&#x5C06;&#x8981;&#x6302;&#x8F7D;
-render() &#x6E32;&#x67D3;
-componentDidMount() &#x7EC4;&#x4EF6;&#x6302;&#x8F7D;&#x5B8C;&#x6BD5;
-&#x5C5E;&#x6027;&#x6216;&#x72B6;&#x6001;&#x7684;&#x6539;&#x53D8;&#x4F1A;&#x89E6;&#x53D1;&#x4E00;&#x6B21;&#x66F4;&#x65B0;&#xFF0C;&#x5F53;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#x5728;&#x88AB;&#x91CD;&#x6E32;&#x67D3;&#x65F6;&#xFF0C;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x5C06;&#x4F1A;&#x88AB;&#x8C03;&#x7528;:
-componentWillReceiveProps() &#x53EA;&#x6709;&#x5728;&#x4FEE;&#x6539;&#x4E86; props &#x8C03;&#x7528;
-shouldComponentUpdate()&#x7EC4;&#x4EF6;&#x662F;&#x5426;&#x5E94;&#x8BE5;&#x88AB;&#x66F4;&#x65B0;&#xFF08;&#x6B64;&#x65B9;&#x6CD5; return true &#x610F;&#x601D;&#x5C31;&#x662F;&#x540C;&#x610F;&#x66F4;&#x65B0; &#xFF1B;return false &#x610F;&#x601D;&#x5C31;&#x662F;&#x4E0D;&#x540C;&#x610F;&#x66F4;&#x65B0;&#xFF09;
-componentWillUpdate()
-render()
-componentDidUpdate()
-componentWillUnmount() &#x7EC4;&#x4EF6;&#x9500;&#x6BC1;&#x548C;&#x5378;&#x8F7D;&#x540E;&#x7ACB;&#x5373;&#x8C03;&#x7528;,&#x901A;&#x5E38;&#x7528;&#x6765;&#x6E05;&#x695A;&#x8BA1;&#x65F6;&#x5668;&#x548C;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42; -&#x5F53;&#x4F60;&#x4FEE;&#x6539;&#x4E86; state &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E0A;&#x8FF0;&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#xFF0C;&#x9664;&#x4E86; componentWillReceiveProps() &#x4E4B;&#x5916;&#xFF0C;&#x6B64;&#x65F6;&#x5728;&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x5185;&#x4E0D;&#x80FD;&#x4FEE;&#x6539; state
-&#x5F53;&#x7236;&#x7EC4;&#x4EF6;&#x60F3;&#x8981;&#x4FEE;&#x6539;&#x5B50;&#x7EC4;&#x4EF6;&#x7684;&#x72B6;&#x6001;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x7236;&#x7EC4;&#x4EF6;&#x4F20;props &#x4FEE;&#x6539;&#x5B50;&#x7EC4;&#x4EF6;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x4F46;&#x662F;props &#x4F20;&#x9012;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E0A;&#x8FF0;&#x51E0;&#x4E2A;&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570;&#x90FD;&#x4F1A;&#x88AB;&#x89E6;&#x53D1;&#xFF0C;&#x4F46;&#x53EA;&#x6709; componentWillReceiveProps() &#x8FD9;&#x4E2A;&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x4FEE;&#x6539; state
-props &#x9ED8;&#x8BA4;&#x503C;&#xFF1A; &#x7C7B;&#x540D;.defaultProps = {}</p>
+<p>&#x73B0;&#x5728;&#x8981;&#x628A;&#x7B2C;&#x4E00;&#x884C;&#x548C;&#x7B2C;&#x4E8C;&#x884C;&#x62C6;&#x5206;&#x5230;&#x72EC;&#x7ACB;&#x6A21;&#x5757;&#x4E4B;&#x4E2D;&#x3002;&#x73B0;&#x5728;&#x628A;&#x4E24;&#x9879;&#x5185;&#x5BB9;&#x90FD;&#x62F7;&#x8D1D;&#x5230; myModule.js &#x4E2D;&#xFF0C;&#x4ECE;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x4E2D;&#xFF0C;&#x5BFC;&#x51FA;&#x591A;&#x9879;&#x5185;&#x5BB9;&#xFF0C;&#x63A8;&#x8350;&#x7684;&#x65B9;&#x5F0F;&#x662F;&#x7528;&#x547D;&#x540D;&#x5BFC;&#x51FA;&#x3002;</p>
+<h5 id="mymodulejs">myModule.js</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> sayHello = () =&gt; <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;hello&apos;</span>)
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">const</span> myString = <span class="hljs-string">&apos;Peter&apos;</span>
+</code></pre>
+<p>&#x6BCF;&#x4E2A; const &#x4E4B;&#x524D;&#xFF0C;&#x52A0;&#x4E0A; export &#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x5BFC;&#x51FA;&#x4E86;&#x4E24;&#x4E2A;&#x53D8;&#x91CF;&#x3002;&#x5728; JS &#x8BED;&#x8A00;&#x91CC;&#x9762;&#xFF0C;&#x51FD;&#x6570;&#x5C31;&#x662F;&#x53D8;&#x91CF;&#x3002;&#x6240;&#x4EE5;&#x5BFC;&#x51FA;&#x8BED;&#x6CD5;&#x4E5F;&#x6CA1;&#x6709;&#x4EC0;&#x4E48;&#x533A;&#x522B;&#x3002;</p>
+<h5 id="mainjs">main.js</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> { myString, sayHello } <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./myModule&apos;</span>
+</code></pre>
+<p>&#x547D;&#x540D;&#x5BFC;&#x51FA;&#x4E4B;&#x540E;&#xFF0C;&#x5BFC;&#x5165;&#x6709;&#x4E00;&#x4E2A;&#x5C40;&#x9650;&#xFF0C;&#x5C31;&#x662F;&#x8981;&#x4E25;&#x683C;&#x6309;&#x7167;&#x539F;&#x53D8;&#x91CF;&#x540D;&#x5BFC;&#x5165;&#xFF08;&#x5F53;&#x7136;&#x901A;&#x8FC7;&#x9002;&#x5F53;&#x7684;&#x8BED;&#x6CD5;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x6539;&#x540D;&#xFF0C;&#x8FD9;&#x4E2A;&#x6682;&#x65F6;&#x4E0D;&#x4ECB;&#x7ECD;&#xFF09;&#x3002;&#x540C;&#x65F6;&#x8981;&#x7528;&#x4E2D;&#x62EC;&#x53F7;&#x5305;&#x88F9;&#x3002;&#x56E0;&#x4E3A;&#x7528;&#x5230;&#x4E86; ES6 &#x6A21;&#x5757;&#xFF0C;&#x6240;&#x4EE5;&#x7528;&#x4E4B;&#x524D;&#x7684; webpack &#x73AF;&#x5883;&#x7F16;&#x8BD1;&#x4E00;&#x4E0B;&#xFF0C;&#x624D;&#x80FD;&#x8FD0;&#x884C;&#x3002;</p>
+<h2 id="&#x9ED8;&#x8BA4;&#x5BFC;&#x51FA;">&#x9ED8;&#x8BA4;&#x5BFC;&#x51FA;</h2>
+<p>&#x4F46;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x4E00;&#x4E2A;&#x6A21;&#x5757;&#x4E2D;&#x53EA;&#x5BFC;&#x51FA;&#x4E00;&#x4E2A;&#x53D8;&#x91CF;&#x3002;&#x90A3;&#x4E48;&#x80FD;&#x4E0D;&#x80FD;&#x628A;&#x547D;&#x540D;&#x5BFC;&#x51FA;&#x7684;&#x4E24;&#x4E2A;&#x9650;&#x5236;&#x53BB;&#x6389;&#x5462;&#xFF1F;&#x606D;&#x559C;&#xFF0C;&#x7528;&#x9ED8;&#x8BA4;&#x5BFC;&#x51FA;&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x5BFC;&#x5165;&#x4F7F;&#x7528;&#x8D77;&#x6765;&#x5C31;&#x65B9;&#x4FBF;&#x5F88;&#x591A;&#xFF1A;&#x7B2C;&#x4E00;&#xFF0C;&#x4E0D;&#x7528;&#x52A0;&#x4E2D;&#x62EC;&#x53F7;&#xFF0C;&#x7B2C;&#x4E8C;&#xFF0C;&#x5BFC;&#x5165;&#x540E;&#x540D;&#x5B57;&#x4EFB;&#x610F;&#x3002;<br>&#x7EE7;&#x7EED;&#x628A;&#x4E0A;&#x9762;&#x7684;&#x5305;&#x542B;&#x4E24;&#x4E2A;&#x547D;&#x540D;&#x5BFC;&#x51FA;&#x7684; myModule.js &#x6587;&#x4EF6;&#xFF0C;&#x62C6;&#x5206;&#x6210;&#x4E24;&#x4E2A;&#x7528;&#x9ED8;&#x8BA4;&#x5BFC;&#x51FA;&#x65B9;&#x5F0F;&#x7684; ES6 &#x6A21;&#x5757;&#x3002;</p>
+<h5 id="mystringjs">myString.js</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> myString = <span class="hljs-string">&apos;Peter&apos;</span>
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> myString
+</code></pre>
+<p>&#x5220;&#x9664;&#x539F;&#x6709;&#x7684; myModule.js &#xFF0C;&#x6DFB;&#x52A0; myString.js &#xFF0C;&#x628A; myString &#x8FDB;&#x884C;&#x9ED8;&#x8BA4;&#x5BFC;&#x51FA;&#x3002;</p>
+<h5 id="sayhellojs">sayHello.js</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> sayHello = () =&gt; <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;hello&apos;</span>);
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> sayHello
+
+&#x518D;&#x6DFB;&#x52A0; sayHello.js &#xFF0C;&#x628A; sayHello &#x9ED8;&#x8BA4;&#x5BFC;&#x51FA;&#x3002;
+<span class="hljs-comment">// main.js</span>
+<span class="hljs-keyword">import</span> sayHi <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./sayHello&apos;</span>
+<span class="hljs-keyword">import</span> peter <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./myString&apos;</span>
+
+<span class="hljs-keyword">const</span> myFun = () =&gt; {
+  sayHi()
+  <span class="hljs-built_in">console</span>.log(peter)
+}
+
+myFun()
+</code></pre>
+<p>&#x5BFC;&#x5165;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EF;&#x4EE5;&#x5BF9;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x91CD;&#x547D;&#x540D;&#x3002;</p>
 
                                 
                                 </section>
@@ -938,12 +928,12 @@ props &#x9ED8;&#x8BA4;&#x503C;&#xFF1A; &#x7C7B;&#x540D;.defaultProps = {}</p>
 
             
                 
-                <a href="anzhuang.html" class="navigation navigation-prev " aria-label="Previous page: 第一章：react">
+                <a href="ajax.html" class="navigation navigation-prev " aria-label="Previous page: 第三节：ajax">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../vue-new/" class="navigation navigation-next " aria-label="Next page: 第二章：vue 评论页面">
+                <a href="../html/html笔记.html" class="navigation navigation-next " aria-label="Next page: Html:笔记">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -954,7 +944,7 @@ props &#x9ED8;&#x8BA4;&#x503C;&#xFF1A; &#x7C7B;&#x540D;.defaultProps = {}</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"第一节：react","level":"1.2.1","depth":2,"next":{"title":"第二章：vue 评论页面","level":"1.3","depth":1,"path":"vue-new/index.md","ref":"vue-new/index.md","articles":[{"title":"第一节：搭建 vue 环境","level":"1.3.1","depth":2,"path":"vue-new/vue-cli.md","ref":"vue-new/vue-cli.md","articles":[]},{"title":"第二节：添加 vue 组件","level":"1.3.2","depth":2,"path":"vue-new/edit.md","ref":"vue-new/edit.md","articles":[]},{"title":"第三节：vue-state","level":"1.3.3","depth":2,"path":"vue-new/state.md","ref":"vue-new/state.md","articles":[]},{"title":"第四节：vue-事件","level":"1.3.4","depth":2,"path":"vue-new/event.md","ref":"vue-new/event.md","articles":[]},{"title":"第五节：vue-属性","level":"1.3.5","depth":2,"path":"vue-new/attribute.md","ref":"vue-new/attribute.md","articles":[]},{"title":"第六节：vue-路由","level":"1.3.6","depth":2,"path":"vue-new/router.md","ref":"vue-new/router.md","articles":[]},{"title":"第七节：vue-动态路由","level":"1.3.7","depth":2,"path":"vue-new/route.md","ref":"vue-new/route.md","articles":[]},{"title":"第八节：vue-添加评论 store","level":"1.3.8","depth":2,"path":"vue-new/vue-store.md","ref":"vue-new/vue-store.md","articles":[]},{"title":"第九节：vue-修改 store 中的数据","level":"1.3.9","depth":2,"path":"vue-new/mutation.md","ref":"vue-new/mutation.md","articles":[]},{"title":"第十节：vue-action","level":"1.3.10","depth":2,"path":"vue-new/action.md","ref":"vue-new/action.md","articles":[]},{"title":"第十一节：vue-API","level":"1.3.11","depth":2,"path":"vue-new/api.md","ref":"vue-new/api.md","articles":[]},{"title":"第十二节：vue-发评论","level":"1.3.12","depth":2,"path":"vue-new/commentary.md","ref":"vue-new/commentary.md","articles":[]},{"title":"第十三节：vue-文章列表","level":"1.3.13","depth":2,"path":"vue-new/list.md","ref":"vue-new/list.md","articles":[]},{"title":"第十四节：使用 v-if 应对初始值为空","level":"1.3.14","depth":2,"path":"vue-new/v-if.md","ref":"vue-new/v-if.md","articles":[]},{"title":"第十五节：处理数据关系","level":"1.3.15","depth":2,"path":"vue-new/comments.md","ref":"vue-new/comments.md","articles":[]},{"title":"第十六节：使用 Getter 简化代码","level":"1.3.16","depth":2,"path":"vue-new/getter.md","ref":"vue-new/getter.md","articles":[]},{"title":"vue 笔记","level":"1.3.17","depth":2,"path":"vue-new/node.md","ref":"vue-new/node.md","articles":[]}]},"previous":{"title":"第一章：react","level":"1.2","depth":1,"path":"react/anzhuang.md","ref":"react/anzhuang.md","articles":[{"title":"第一节：react","level":"1.2.1","depth":2,"path":"react/state.md","ref":"react/state.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"react/state.md","mtime":"2018-04-23T02:58:27.484Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-08T06:43:12.297Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"第四节：ES6 模块","level":"1.8.4","depth":2,"next":{"title":"Html:笔记","level":"1.9","depth":1,"path":"html/html笔记.md","ref":"html/html笔记.md","articles":[]},"previous":{"title":"第三节：ajax","level":"1.8.3","depth":2,"path":"es6/ajax.md","ref":"es6/ajax.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"es6/es6module.md","mtime":"2018-05-03T02:32:28.427Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-08T06:43:12.297Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

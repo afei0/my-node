@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>第一节：react · GitBook</title>
+        <title>第三节：源码 架构 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../vue-new/" />
+    <link rel="next" href="layout.html" />
     
     
-    <link rel="prev" href="anzhuang.html" />
+    <link rel="prev" href="Script.html" />
     
 
     </head>
@@ -102,9 +102,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="anzhuang.html">
+        <li class="chapter " data-level="1.2" data-path="../react/anzhuang.html">
             
-                <a href="anzhuang.html">
+                <a href="../react/anzhuang.html">
             
                     
                     第一章：react
@@ -116,9 +116,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.2.1" data-path="state.html">
+        <li class="chapter " data-level="1.2.1" data-path="../react/state.html">
             
-                <a href="state.html">
+                <a href="../react/state.html">
             
                     
                     第一节：react
@@ -529,9 +529,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6" data-path="../vue-next/">
+        <li class="chapter " data-level="1.6" data-path="./">
             
-                <a href="../vue-next/">
+                <a href="./">
             
                     
                     第五章：vue-基础
@@ -543,9 +543,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.6.1" data-path="../vue-next/Environmental.html">
+        <li class="chapter " data-level="1.6.1" data-path="Environmental.html">
             
-                <a href="../vue-next/Environmental.html">
+                <a href="Environmental.html">
             
                     
                     第一节：开发环境搭建
@@ -556,9 +556,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.2" data-path="../vue-next/Script.html">
+        <li class="chapter " data-level="1.6.2" data-path="Script.html">
             
-                <a href="../vue-next/Script.html">
+                <a href="Script.html">
             
                     
                     第二节：NPM 脚本
@@ -569,9 +569,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.3" data-path="../vue-next/Source.html">
+        <li class="chapter active" data-level="1.6.3" data-path="Source.html">
             
-                <a href="../vue-next/Source.html">
+                <a href="Source.html">
             
                     
                     第三节：源码 架构
@@ -582,9 +582,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.4" data-path="../vue-next/layout.html">
+        <li class="chapter " data-level="1.6.4" data-path="layout.html">
             
-                <a href="../vue-next/layout.html">
+                <a href="layout.html">
             
                     
                     第四节：布局文件
@@ -595,9 +595,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.5" data-path="../vue-next/router.html">
+        <li class="chapter " data-level="1.6.5" data-path="router.html">
             
-                <a href="../vue-next/router.html">
+                <a href="router.html">
             
                     
                     第五节：router
@@ -608,9 +608,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.6.6" data-path="../vue-next/svg.html">
+        <li class="chapter " data-level="1.6.6" data-path="svg.html">
             
-                <a href="../vue-next/svg.html">
+                <a href="svg.html">
             
                     
                     第六节：svg
@@ -830,7 +830,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >第一节：react</a>
+        <a href=".." >第三节：源码 架构</a>
     </h1>
 </div>
 
@@ -845,72 +845,76 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>&#x6539;&#x53D8; this &#x6307;&#x5411;</p>
-<p>bind</p>
-<p>&#x51FD;&#x6570;&#x540D;.bing(&#x5BF9;&#x8C61;)
-&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x548C;&#x539F;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x529F;&#x80FD;&#x4E00;&#x6837;&#xFF0C;&#x4F46;&#x662F;&#x51FD;&#x6570;&#x5185;&#x90E8;this&#x5DF2;&#x7ECF;&#x6307;&#x5411;&#x4E86; bind &#x65B9;&#x6CD5;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;
-super</p>
-<p>super&#x5173;&#x952E;&#x5B57;&#x53EA;&#x80FD;&#x591F;&#x4EE5;&#x6307;&#x5B9A;&#x7684;&#x5F62;&#x5F0F;&#x51FA;&#x73B0;&#x5728;&#x4EE5;&#x4E0B;&#x5730;&#x70B9;&#xFF1A;</p>
-<pre><code class="lang-js"><span class="hljs-number">1.</span> <span class="hljs-class"><span class="hljs-keyword">class</span>&#x8BED;&#x53E5;&#x5757;&#x5185;&#x7684;<span class="hljs-title">constructor</span>&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x5185;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;
-  <span class="hljs-title">class</span> <span class="hljs-title">B</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span> </span>{
-    <span class="hljs-keyword">constructor</span>(){
-        <span class="hljs-keyword">super</span>()
-    }
-  }
-<span class="hljs-number">2.</span> <span class="hljs-class"><span class="hljs-keyword">class</span>&#x8BED;&#x53E5;&#x5757;&#x5185;&#x7684;<span class="hljs-title">static</span>&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x5185;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;<span class="hljs-title">class</span> <span class="hljs-title">B</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span> </span>{
-    <span class="hljs-keyword">static</span> foo {
-        <span class="hljs-keyword">super</span>.test1() <span class="hljs-comment">// &#x76F8;&#x5F53;&#x4E8E;A.test1.call(this)</span>
-        <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">super</span>.test2 === A.test2)
-      }
-    }
-<span class="hljs-number">3.</span> <span class="hljs-class"><span class="hljs-keyword">class</span>&#x8BED;&#x53E5;&#x5757;&#x5185;&#x7684;&#x4E00;&#x822C;&#x65B9;&#x6CD5;&#xFF08;&#x975E;<span class="hljs-title">static</span>&#x6216;<span class="hljs-title">constructor</span>&#x51FD;&#x6570;&#xFF09;&#x7684;&#x5B9A;&#x4E49;&#x5185;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;
-  <span class="hljs-title">class</span> <span class="hljs-title">B</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span> </span>{
-    foo() {
-        <span class="hljs-keyword">super</span>.foo()
-    }
-  }
-<span class="hljs-number">4.</span> &#x5728;&#x5BF9;&#x8C61;&#x5B57;&#x9762;&#x91CF;&#x7684;&#x65B9;&#x6CD5;&#x7684;&#x5B9A;&#x4E49;&#x5185;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;<span class="hljs-keyword">let</span> a = {
-    foo() {
-        <span class="hljs-keyword">super</span>.test()
-      }
-    }
+                                <h1 id="&#x6E90;&#x7801;&#x67B6;&#x6784;">&#x6E90;&#x7801;&#x67B6;&#x6784;</h1>
+<p>&#x6765;&#x642D;&#x5EFA;&#x57FA;&#x672C;&#x4EE3;&#x7801;&#x67B6;&#x6784;</p>
+<h2 id="&#x811A;&#x624B;&#x67B6;&#x9ED8;&#x8BA4;&#x6E90;&#x7801;">&#x811A;&#x624B;&#x67B6;&#x9ED8;&#x8BA4;&#x6E90;&#x7801;</h2>
+<pre><code>$ cd src
+$ ls
+assets components main.js App.vue
+</code></pre><p>assets &#x672C;&#x610F;&#x662F;&#x201D;&#x8D44;&#x4EA7;&#x201C;&#xFF0C;&#x8FD9;&#x91CC;&#x7684;&#x610F;&#x601D;&#x662F;&#x9759;&#x6001;&#x8D44;&#x6E90;&#xFF0C;&#x56FE;&#x7247;/CSS &#x7B49;&#x7B49;&#x4E00;&#x5207;&#x4E0D;&#x9700;&#x8981;&#x8FD0;&#x7B97;&#x5C31;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x88AB;&#x6D4F;&#x89C8;&#x5668;&#x4F7F;&#x7528;&#x7684;&#x90FD;&#x53EF;&#x4EE5;&#x53EB;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x3002;&#x90A3; js &#x7B97;&#x4E0D;&#x7B97;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x5462;&#xFF1F;&#x5982;&#x679C;&#x662F;&#x76F4;&#x63A5;&#x53EF;&#x4EE5;&#x88AB;&#x6D4F;&#x89C8;&#x5668;&#x8FD0;&#x884C;&#x7684; js &#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x8BA4;&#x4E3A;&#x662F;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x3002;&#x6240;&#x4EE5;&#x9759;&#x6001;&#x8D44;&#x6E90;&#x5E76;&#x4E0D;&#x662F;&#x672C;&#x8EAB;&#x4E0D;&#x6267;&#x884C;&#xFF0C;&#x800C;&#x662F;&#x4EA4;&#x7ED9;&#x6D4F;&#x89C8;&#x5668;&#x4E4B;&#x524D;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x505A;&#x9884;&#x5148;&#x7684;&#x8FD0;&#x7B97;&#x5904;&#x7406;<br>components &#x91CC;&#x9762;&#x653E;&#x9879;&#x76EE;&#x7EC4;&#x4EF6;<br>main.js &#x662F;&#x9879;&#x76EE;&#x5165;&#x53E3;&#x6587;&#x4EF6;<br>App.vue &#x662F;&#x9879;&#x76EE;&#x5165;&#x53E3;&#x7EC4;&#x4EF6;</p>
+<h2 id="&#x786E;&#x5B9A;-css-&#x67B6;&#x6784;">&#x786E;&#x5B9A; CSS &#x67B6;&#x6784;</h2>
+<p>&#x6765;&#x5B9A;&#x4E00;&#x4E0B;&#x5168;&#x5C40; css &#x5199;&#x5230;&#x54EA;&#x91CC;&#xFF0C;&#x7EC4;&#x4EF6;&#x5C40;&#x90E8; css &#x600E;&#x4E48;&#x5199;&#x3002;</p>
+<h5 id="appvue">App.vue</h5>
+<pre><code>&lt;style&gt;
+body {
+  margin: 0;
+}
 
-    <span class="hljs-keyword">let</span> b = {
-        test() {
-            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;I&apos;m b.&quot;</span>)
-        }
-    }
+* {
+  box-sizing: border-box;
+}
+&lt;/style&gt;
+</code></pre><p>&#x5168;&#x5C40;&#x7684; css &#x5199;&#x5230;&#x6574;&#x4E2A;&#x9879;&#x76EE;&#x7684;&#x5165;&#x53E3;&#x7EC4;&#x4EF6;&#xFF0C;&#x6216;&#x8005;&#x8BF4;&#x5C31;&#x662F;&#x8001;&#x7956;&#x5B97;&#x7EC4;&#x4EF6;&#x4E2D;&#x7684; script &#x6807;&#x7B7E;&#x4E4B;&#x5185;&#x3002;<br>&#x6574;&#x4E2A; App.vue &#x6539;&#x6210;&#x4E0B;&#x9762;&#x7684;&#x6837;&#x5B50;</p>
+<h5 id="appvue">App.vue</h5>
+<pre><code>&lt;template&gt;
+  &lt;div&gt;
+    &lt;Layout /&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
 
-    <span class="hljs-built_in">Object</span>.setPrototypeOf(a, b);
-    a.foo(); <span class="hljs-comment">// &quot;I&apos;m b.&quot;</span>
-</code></pre>
-<h3 id="state">state</h3>
-<p>state&#x72B6;&#x6001;&#xFF0C;&#x7EC4;&#x4EF6;&#x7684;state&#x6539;&#x53D8;&#xFF0C;&#x7EC4;&#x4EF6;&#x5C31;&#x4F1A;&#x91CD;&#x65B0;&#x6E32;&#x67D3;&#xFF0C;&#x9875;&#x9762;&#x4E5F;&#x5C31;&#x6539;&#x53D8;&#x4E86;
-react &#x7EC4;&#x4EF6;&#x9ED8;&#x8BA4;&#x6709;&#x4E00;&#x4E2A; state &#x5C5E;&#x6027;&#xFF0C;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;
-&#x5728;constructor&#x5185;&#x8BBE;&#x7F6E;state&#xFF0C;&#x7528;this.state = {&#x8BBE;&#x7F6E;&#x72B6;&#x6001;}
-&#x4F7F;&#x7528; setState &#x65B9;&#x6CD5;&#x4FEE;&#x6539; state &#x503C;
-&#x4E24;&#x4E2A;&#x88C5;&#x6001;&#x6765;&#x56DE;&#x5207;&#x56DE;&#xFF0C;&#x8BBE;&#x7F6E;active = true/false,&#x7136;&#x540E;&#x8BBE;&#x7F6E;&#x65F6;&#x7528; &#x975E; &#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;!this.state.active
-setState &#x662F;&#x5F02;&#x6B65;&#x65B9;&#x6CD5;(&#x5F02;&#x6B65;&#x975E;&#x963B;&#x585E;&#xFF0C;&#x540C;&#x6B65;&#x963B;&#x585E;)
-requestAanimationFrame &#x76F8;&#x5F53;&#x4E8E; setTimeout(&#x8FD9;&#x4E2A;&#x662F;&#x6839;&#x636E;&#x7535;&#x8111;&#x672C;&#x8EAB;&#x7684;&#x6027;&#x80FD; &#x6267;&#x884C;&#x5FEB;&#x6162;)
-&#x7EC4;&#x4EF6;&#x5185;&#x90E8;&#x7684;setInterval&#x8981;&#x5B9A;&#x4E49;&#x4E3A;&#x7EC4;&#x4EF6;&#x7684;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;</p>
-<h3 id="&#x5B50;&#x7236;&#x7EC4;&#x4EF6;&#x76F8;&#x4E92;&#x4EA4;&#x4E92;">&#x5B50;&#x7236;&#x7EC4;&#x4EF6;&#x76F8;&#x4E92;&#x4EA4;&#x4E92;</h3>
-<p>constructor &#x51FD;&#x6570;&#x5185;&#x90E8;&#x4E0D;&#x505A;&#x8BBE;&#x7F6E;&#x662F;&#x62FF;&#x4E0D;&#x5230;&#x7236;&#x7EC4;&#x4EF6;&#x4F20;&#x8FC7;&#x6765;&#x7684; props &#x7684;&#xFF0C;&#x60F3;&#x8981;&#x62FF;&#x5230;&#xFF0C;&#x9700;&#x8981;&#x5728; constructor &#x51FD;&#x6570;&#x4F20;&#x4E00;&#x4E2A; porps &#x53C2;&#x6570;&#xFF0C;&#x5E76;&#x4E14;&#x4E5F;&#x9700;&#x8981;&#x5728; super &#x65B9;&#x6CD5;&#x5185;&#x4F20;&#x4E00;&#x4E2A;&#x53C2;&#x6570; props &#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x5728; constructor &#x5185;&#x90E8;&#x83B7;&#x53D6;&#x5230; props
-state &#x7684;&#x503C; &#x4E00;&#x5B9A;&#x8981;&#x5B9A;&#x4E49;&#x6210;&#x5E38;&#x91CF;&#xFF0C;&#x4FEE;&#x6539;&#x7EC4;&#x4EF6;&#x72B6;&#x6001; state &#x53EA;&#x80FD;&#x7528; setState &#x65B9;&#x6CD5;&#x4FEE;&#x6539;</p>
-<h3 id="&#x7EC4;&#x4EF6;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;lifecycle">&#x7EC4;&#x4EF6;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;(lifecycle)</h3>
-<p>&#x7EC4;&#x4EF6;&#x5B9E;&#x4F8B;&#x88AB;&#x521B;&#x5EFA;&#x548C;&#x63D2;&#x5165;DOM&#x4E2D;&#x65F6;&#x8C03;&#x7528;&#x4E0B;&#x9762;&#x56DB;&#x4E2A;&#x65B9;&#x6CD5;&#xFF1A;
-constructor() &#x521D;&#x59CB;&#x5316; props &#x548C; state
-componentWillMount() &#x7EC4;&#x4EF6;&#x5C06;&#x8981;&#x6302;&#x8F7D;
-render() &#x6E32;&#x67D3;
-componentDidMount() &#x7EC4;&#x4EF6;&#x6302;&#x8F7D;&#x5B8C;&#x6BD5;
-&#x5C5E;&#x6027;&#x6216;&#x72B6;&#x6001;&#x7684;&#x6539;&#x53D8;&#x4F1A;&#x89E6;&#x53D1;&#x4E00;&#x6B21;&#x66F4;&#x65B0;&#xFF0C;&#x5F53;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#x5728;&#x88AB;&#x91CD;&#x6E32;&#x67D3;&#x65F6;&#xFF0C;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x5C06;&#x4F1A;&#x88AB;&#x8C03;&#x7528;:
-componentWillReceiveProps() &#x53EA;&#x6709;&#x5728;&#x4FEE;&#x6539;&#x4E86; props &#x8C03;&#x7528;
-shouldComponentUpdate()&#x7EC4;&#x4EF6;&#x662F;&#x5426;&#x5E94;&#x8BE5;&#x88AB;&#x66F4;&#x65B0;&#xFF08;&#x6B64;&#x65B9;&#x6CD5; return true &#x610F;&#x601D;&#x5C31;&#x662F;&#x540C;&#x610F;&#x66F4;&#x65B0; &#xFF1B;return false &#x610F;&#x601D;&#x5C31;&#x662F;&#x4E0D;&#x540C;&#x610F;&#x66F4;&#x65B0;&#xFF09;
-componentWillUpdate()
-render()
-componentDidUpdate()
-componentWillUnmount() &#x7EC4;&#x4EF6;&#x9500;&#x6BC1;&#x548C;&#x5378;&#x8F7D;&#x540E;&#x7ACB;&#x5373;&#x8C03;&#x7528;,&#x901A;&#x5E38;&#x7528;&#x6765;&#x6E05;&#x695A;&#x8BA1;&#x65F6;&#x5668;&#x548C;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42; -&#x5F53;&#x4F60;&#x4FEE;&#x6539;&#x4E86; state &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E0A;&#x8FF0;&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#xFF0C;&#x9664;&#x4E86; componentWillReceiveProps() &#x4E4B;&#x5916;&#xFF0C;&#x6B64;&#x65F6;&#x5728;&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x5185;&#x4E0D;&#x80FD;&#x4FEE;&#x6539; state
-&#x5F53;&#x7236;&#x7EC4;&#x4EF6;&#x60F3;&#x8981;&#x4FEE;&#x6539;&#x5B50;&#x7EC4;&#x4EF6;&#x7684;&#x72B6;&#x6001;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x7236;&#x7EC4;&#x4EF6;&#x4F20;props &#x4FEE;&#x6539;&#x5B50;&#x7EC4;&#x4EF6;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x4F46;&#x662F;props &#x4F20;&#x9012;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E0A;&#x8FF0;&#x51E0;&#x4E2A;&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570;&#x90FD;&#x4F1A;&#x88AB;&#x89E6;&#x53D1;&#xFF0C;&#x4F46;&#x53EA;&#x6709; componentWillReceiveProps() &#x8FD9;&#x4E2A;&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x4FEE;&#x6539; state
-props &#x9ED8;&#x8BA4;&#x503C;&#xFF1A; &#x7C7B;&#x540D;.defaultProps = {}</p>
+&lt;script&gt;
+import Layout from &apos;./components/Layout.vue&apos;
+
+export default {
+  name: &apos;app&apos;,
+  components: {
+    Layout
+  }
+}
+&lt;/script&gt;
+
+&lt;style&gt;
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+&lt;/style&gt;
+</code></pre><h5 id="layoutvue">Layout.vue</h5>
+<pre><code>&lt;template&gt;
+  &lt;div class=&quot;layout&quot;&gt;
+    Hello
+  &lt;/div&gt;
+&lt;/template&gt;
+
+&lt;script&gt;
+export default {
+  name: &apos;Layout&apos;
+}
+&lt;/script&gt;
+
+&lt;style scoped&gt;
+.layout {
+  color: red;
+}
+&lt;/style&gt;
+</code></pre><p>&#x5220;&#x9664; HelloWorld.vue &#xFF0C;&#x521B;&#x5EFA; Layout.vue &#x3002;&#x5C40;&#x90E8; css &#x5C31;&#x5199;&#x5230;&#x5404;&#x4E2A;&#x7EC4;&#x4EF6;&#x5185;&#x90E8;&#x7684; style &#x6807;&#x7B7E;&#x4E0B;&#x3002; <code>scoped</code> &#x7684;&#x610F;&#x601D;&#x662F; &#x201D;&#x9650;&#x5236;&#x4F5C;&#x7528;&#x57DF;&#x201C;&#xFF0C;&#x52A0;&#x4E0A;&#x5B83;&#xFF0C;&#x5C31;&#x4FDD;&#x8BC1;&#x4E86;&#x5F53;&#x524D;&#x7EC4;&#x4EF6;&#x7684; css &#x4E2D;&#xFF0C;&#x5373;&#x4F7F; class &#x540D;&#x8DDF;&#x4ED6;&#x7EC4;&#x4EF6;&#x4E2D;&#x91CD;&#x590D;&#xFF0C;&#x4E5F;&#x4E0D;&#x4F1A;&#x9020;&#x6210;&#x6837;&#x5F0F;&#x7684;&#x4E92;&#x76F8;&#x5F71;&#x54CD;&#x3002;</p>
+<h2 id="vue-&#x7EC4;&#x4EF6;&#x7684;&#x4E09;&#x5927;&#x8981;&#x7D20;">vue &#x7EC4;&#x4EF6;&#x7684;&#x4E09;&#x5927;&#x8981;&#x7D20;</h2>
+<p>&#x4E00;&#x4E2A; vue &#x7EC4;&#x4EF6;&#x5C31;&#x662F;&#x4E00;&#x4E2A; .vue &#x7684;&#x6587;&#x4EF6;&#x3002;&#x91CC;&#x9762;&#x5305;&#x542B;&#x4E09;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x4EE3;&#x7801;&#x3002;<br>template &#x6A21;&#x677F;&#xFF0C;&#x6709;&#x4E9B;&#x667A;&#x80FD;&#x7684; html<br>script &#x811A;&#x672C;&#xFF0C;&#x8FD9;&#x91CC;&#x9762;&#x5199; JS &#x4EE3;&#x7801; &#xFF0C;JS &#x4E5F;&#x662F;&#x4E00;&#x79CD;&#x811A;&#x672C;&#x8BED;&#x8A00;<br>style &#x6837;&#x5F0F;&#xFF0C;&#x91CC;&#x9762;&#x5199; css</p>
+<h2 id="vue-&#x7EC4;&#x4EF6;&#x5982;&#x679C;&#x4F9B;&#x7236;&#x7EC4;&#x4EF6;&#x4F7F;&#x7528;">Vue &#x7EC4;&#x4EF6;&#x5982;&#x679C;&#x4F9B;&#x7236;&#x7EC4;&#x4EF6;&#x4F7F;&#x7528;</h2>
+<p>&#x4E00;&#x4E2A;&#x88AB;&#x8C03;&#x7528;&#x7684;&#x7EC4;&#x4EF6;&#xFF0C;&#x53EB; &#x5B50;&#x7EC4;&#x4EF6; &#xFF0C;&#x8C03;&#x7528;&#x5B83;&#x7684;&#x7EC4;&#x4EF6;&#x53EB; &#x7236;&#x7EC4;&#x4EF6; &#x3002;&#x8981;&#x60F3;&#x8C03;&#x7528;&#x6210;&#x529F;&#xFF0C;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x6B65;&#x9AA4;&#xFF1A;<br>&#x5B50;&#x7EC4;&#x4EF6;&#x4E2D;&#x8981;&#x5728; export default &#x8BED;&#x53E5;&#x5185;&#xFF0C;&#x6DFB;&#x52A0; name: &apos;&#x7EC4;&#x4EF6;&#x540D;&apos;<br>&#x7236;&#x7EC4;&#x4EF6;&#x4E2D;&#x9996;&#x5148;&#x8981;&#x8FDB;&#x884C;&#x5BFC;&#x5165; import &#x7EC4;&#x4EF6;&#x540D; from &#x2018;./&#x7EC4;&#x4EF6;&apos;<br>&#x7236;&#x7EC4;&#x4EF6;&#x4E2D;&#x8FD8;&#x9700;&#x8981;&#x58F0;&#x660E;&#x81EA;&#x5DF1;&#x7684;&#x5B50;&#x7EC4;&#x4EF6;&#xFF0C;&#x4F8B;&#x5982; components: { &#x7EC4;&#x4EF6;, &#x7EC4;&#x4EF6;}<br>&#x7236;&#x7EC4;&#x4EF6;&#x4E2D;&#x4F7F;&#x7528;&#x8981;&#x7528;&#x7C7B;&#x4F3C; html &#x6807;&#x7B7E;&#x7684;&#x5F62;&#x5F0F; &lt;&#x7EC4;&#x4EF6;&#x540D; /&gt;</p>
 
                                 
                                 </section>
@@ -938,12 +942,12 @@ props &#x9ED8;&#x8BA4;&#x503C;&#xFF1A; &#x7C7B;&#x540D;.defaultProps = {}</p>
 
             
                 
-                <a href="anzhuang.html" class="navigation navigation-prev " aria-label="Previous page: 第一章：react">
+                <a href="Script.html" class="navigation navigation-prev " aria-label="Previous page: 第二节：NPM 脚本">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../vue-new/" class="navigation navigation-next " aria-label="Next page: 第二章：vue 评论页面">
+                <a href="layout.html" class="navigation navigation-next " aria-label="Next page: 第四节：布局文件">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -954,7 +958,7 @@ props &#x9ED8;&#x8BA4;&#x503C;&#xFF1A; &#x7C7B;&#x540D;.defaultProps = {}</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"第一节：react","level":"1.2.1","depth":2,"next":{"title":"第二章：vue 评论页面","level":"1.3","depth":1,"path":"vue-new/index.md","ref":"vue-new/index.md","articles":[{"title":"第一节：搭建 vue 环境","level":"1.3.1","depth":2,"path":"vue-new/vue-cli.md","ref":"vue-new/vue-cli.md","articles":[]},{"title":"第二节：添加 vue 组件","level":"1.3.2","depth":2,"path":"vue-new/edit.md","ref":"vue-new/edit.md","articles":[]},{"title":"第三节：vue-state","level":"1.3.3","depth":2,"path":"vue-new/state.md","ref":"vue-new/state.md","articles":[]},{"title":"第四节：vue-事件","level":"1.3.4","depth":2,"path":"vue-new/event.md","ref":"vue-new/event.md","articles":[]},{"title":"第五节：vue-属性","level":"1.3.5","depth":2,"path":"vue-new/attribute.md","ref":"vue-new/attribute.md","articles":[]},{"title":"第六节：vue-路由","level":"1.3.6","depth":2,"path":"vue-new/router.md","ref":"vue-new/router.md","articles":[]},{"title":"第七节：vue-动态路由","level":"1.3.7","depth":2,"path":"vue-new/route.md","ref":"vue-new/route.md","articles":[]},{"title":"第八节：vue-添加评论 store","level":"1.3.8","depth":2,"path":"vue-new/vue-store.md","ref":"vue-new/vue-store.md","articles":[]},{"title":"第九节：vue-修改 store 中的数据","level":"1.3.9","depth":2,"path":"vue-new/mutation.md","ref":"vue-new/mutation.md","articles":[]},{"title":"第十节：vue-action","level":"1.3.10","depth":2,"path":"vue-new/action.md","ref":"vue-new/action.md","articles":[]},{"title":"第十一节：vue-API","level":"1.3.11","depth":2,"path":"vue-new/api.md","ref":"vue-new/api.md","articles":[]},{"title":"第十二节：vue-发评论","level":"1.3.12","depth":2,"path":"vue-new/commentary.md","ref":"vue-new/commentary.md","articles":[]},{"title":"第十三节：vue-文章列表","level":"1.3.13","depth":2,"path":"vue-new/list.md","ref":"vue-new/list.md","articles":[]},{"title":"第十四节：使用 v-if 应对初始值为空","level":"1.3.14","depth":2,"path":"vue-new/v-if.md","ref":"vue-new/v-if.md","articles":[]},{"title":"第十五节：处理数据关系","level":"1.3.15","depth":2,"path":"vue-new/comments.md","ref":"vue-new/comments.md","articles":[]},{"title":"第十六节：使用 Getter 简化代码","level":"1.3.16","depth":2,"path":"vue-new/getter.md","ref":"vue-new/getter.md","articles":[]},{"title":"vue 笔记","level":"1.3.17","depth":2,"path":"vue-new/node.md","ref":"vue-new/node.md","articles":[]}]},"previous":{"title":"第一章：react","level":"1.2","depth":1,"path":"react/anzhuang.md","ref":"react/anzhuang.md","articles":[{"title":"第一节：react","level":"1.2.1","depth":2,"path":"react/state.md","ref":"react/state.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"react/state.md","mtime":"2018-04-23T02:58:27.484Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-08T06:43:12.297Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"第三节：源码 架构","level":"1.6.3","depth":2,"next":{"title":"第四节：布局文件","level":"1.6.4","depth":2,"path":"vue-next/layout.md","ref":"vue-next/layout.md","articles":[]},"previous":{"title":"第二节：NPM 脚本","level":"1.6.2","depth":2,"path":"vue-next/Script.md","ref":"vue-next/Script.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"vue-next/Source.md","mtime":"2018-05-04T03:26:42.565Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-08T06:43:12.297Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

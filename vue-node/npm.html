@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>第一节：react · GitBook</title>
+        <title>第四节：使用 npm 包 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="../vue-new/" />
+    <link rel="next" href="api.html" />
     
     
-    <link rel="prev" href="anzhuang.html" />
+    <link rel="prev" href="webpack.html" />
     
 
     </head>
@@ -102,9 +102,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2" data-path="anzhuang.html">
+        <li class="chapter " data-level="1.2" data-path="../react/anzhuang.html">
             
-                <a href="anzhuang.html">
+                <a href="../react/anzhuang.html">
             
                     
                     第一章：react
@@ -116,9 +116,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter active" data-level="1.2.1" data-path="state.html">
+        <li class="chapter " data-level="1.2.1" data-path="../react/state.html">
             
-                <a href="state.html">
+                <a href="../react/state.html">
             
                     
                     第一节：react
@@ -432,9 +432,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="../vue-node/">
+        <li class="chapter " data-level="1.5" data-path="./">
             
-                <a href="../vue-node/">
+                <a href="./">
             
                     
                     第四章：vue-从服务器加载数据
@@ -446,9 +446,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.5.1" data-path="../vue-node/api1.html">
+        <li class="chapter " data-level="1.5.1" data-path="api1.html">
             
-                <a href="../vue-node/api1.html">
+                <a href="api1.html">
             
                     
                     第一节：什么是 API
@@ -459,9 +459,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.2" data-path="../vue-node/api2.html">
+        <li class="chapter " data-level="1.5.2" data-path="api2.html">
             
-                <a href="../vue-node/api2.html">
+                <a href="api2.html">
             
                     
                     第二节：API 案例
@@ -472,9 +472,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.3" data-path="../vue-node/webpack.html">
+        <li class="chapter " data-level="1.5.3" data-path="webpack.html">
             
-                <a href="../vue-node/webpack.html">
+                <a href="webpack.html">
             
                     
                     第三节：用 webpack 进行项目构建
@@ -485,9 +485,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.4" data-path="../vue-node/npm.html">
+        <li class="chapter active" data-level="1.5.4" data-path="npm.html">
             
-                <a href="../vue-node/npm.html">
+                <a href="npm.html">
             
                     
                     第四节：使用 npm 包
@@ -498,9 +498,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.5" data-path="../vue-node/api.html">
+        <li class="chapter " data-level="1.5.5" data-path="api.html">
             
-                <a href="../vue-node/api.html">
+                <a href="api.html">
             
                     
                     第零节：api
@@ -511,9 +511,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5.6" data-path="../vue-node/jiazaishuju.html">
+        <li class="chapter " data-level="1.5.6" data-path="jiazaishuju.html">
             
-                <a href="../vue-node/jiazaishuju.html">
+                <a href="jiazaishuju.html">
             
                     
                     第零零节：vue-从服务器加载数据
@@ -830,7 +830,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >第一节：react</a>
+        <a href=".." >第四节：使用 npm 包</a>
     </h1>
 </div>
 
@@ -845,72 +845,32 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <p>&#x6539;&#x53D8; this &#x6307;&#x5411;</p>
-<p>bind</p>
-<p>&#x51FD;&#x6570;&#x540D;.bing(&#x5BF9;&#x8C61;)
-&#x8FD4;&#x56DE;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x548C;&#x539F;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x529F;&#x80FD;&#x4E00;&#x6837;&#xFF0C;&#x4F46;&#x662F;&#x51FD;&#x6570;&#x5185;&#x90E8;this&#x5DF2;&#x7ECF;&#x6307;&#x5411;&#x4E86; bind &#x65B9;&#x6CD5;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;
-super</p>
-<p>super&#x5173;&#x952E;&#x5B57;&#x53EA;&#x80FD;&#x591F;&#x4EE5;&#x6307;&#x5B9A;&#x7684;&#x5F62;&#x5F0F;&#x51FA;&#x73B0;&#x5728;&#x4EE5;&#x4E0B;&#x5730;&#x70B9;&#xFF1A;</p>
-<pre><code class="lang-js"><span class="hljs-number">1.</span> <span class="hljs-class"><span class="hljs-keyword">class</span>&#x8BED;&#x53E5;&#x5757;&#x5185;&#x7684;<span class="hljs-title">constructor</span>&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x5185;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;
-  <span class="hljs-title">class</span> <span class="hljs-title">B</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span> </span>{
-    <span class="hljs-keyword">constructor</span>(){
-        <span class="hljs-keyword">super</span>()
-    }
-  }
-<span class="hljs-number">2.</span> <span class="hljs-class"><span class="hljs-keyword">class</span>&#x8BED;&#x53E5;&#x5757;&#x5185;&#x7684;<span class="hljs-title">static</span>&#x51FD;&#x6570;&#x7684;&#x5B9A;&#x4E49;&#x5185;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;<span class="hljs-title">class</span> <span class="hljs-title">B</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span> </span>{
-    <span class="hljs-keyword">static</span> foo {
-        <span class="hljs-keyword">super</span>.test1() <span class="hljs-comment">// &#x76F8;&#x5F53;&#x4E8E;A.test1.call(this)</span>
-        <span class="hljs-built_in">console</span>.log(<span class="hljs-keyword">super</span>.test2 === A.test2)
-      }
-    }
-<span class="hljs-number">3.</span> <span class="hljs-class"><span class="hljs-keyword">class</span>&#x8BED;&#x53E5;&#x5757;&#x5185;&#x7684;&#x4E00;&#x822C;&#x65B9;&#x6CD5;&#xFF08;&#x975E;<span class="hljs-title">static</span>&#x6216;<span class="hljs-title">constructor</span>&#x51FD;&#x6570;&#xFF09;&#x7684;&#x5B9A;&#x4E49;&#x5185;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;
-  <span class="hljs-title">class</span> <span class="hljs-title">B</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">A</span> </span>{
-    foo() {
-        <span class="hljs-keyword">super</span>.foo()
-    }
-  }
-<span class="hljs-number">4.</span> &#x5728;&#x5BF9;&#x8C61;&#x5B57;&#x9762;&#x91CF;&#x7684;&#x65B9;&#x6CD5;&#x7684;&#x5B9A;&#x4E49;&#x5185;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;<span class="hljs-keyword">let</span> a = {
-    foo() {
-        <span class="hljs-keyword">super</span>.test()
-      }
-    }
-
-    <span class="hljs-keyword">let</span> b = {
-        test() {
-            <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&quot;I&apos;m b.&quot;</span>)
-        }
-    }
-
-    <span class="hljs-built_in">Object</span>.setPrototypeOf(a, b);
-    a.foo(); <span class="hljs-comment">// &quot;I&apos;m b.&quot;</span>
+                                <h1 id="&#x4F7F;&#x7528;-npm-&#x5305;">&#x4F7F;&#x7528; npm &#x5305;</h1>
+<p>JS &#x662F;&#x4E00;&#x4E2A;&#x5F88;&#x6709;&#x7231;&#x7684;&#x793E;&#x533A;&#x3002;&#x4E00;&#x4E9B;&#x5E38;&#x7528;&#x7684;&#x529F;&#x80FD;&#x4EE3;&#x7801;&#xFF0C;&#x90FD;&#x7531;&#x6570;&#x4EE5;&#x767E;&#x4E07;&#x8BA1;&#x7684;&#x5F00;&#x53D1;&#x8005;&#xFF0C;&#x6253;&#x5305;&#x6210;&#x6570;&#x91CF;&#x4EE5;&#x5341;&#x4E07;&#x8BA1;&#x7684; npm &#x5305;&#xFF0C;&#x653E;&#x5230;&#x4E86; npmjs.org &#x8FD9;&#x4E2A;&#x7F51;&#x7AD9;&#x4E0A;&#xFF0C;&#x4F9B;&#x5927;&#x5BB6;&#x514D;&#x8D39;&#x4F7F;&#x7528;&#x3002;</p>
+<h2 id="&#x5B89;&#x88C5;-npm-&#x5305;">&#x5B89;&#x88C5; npm &#x5305;</h2>
+<p>&#x7CFB;&#x7EDF;&#x4E0A;&#x5B89;&#x88C5;&#x4E86; nodejs &#x4E4B;&#x540E;&#xFF0C;&#x5C31;&#x81EA;&#x52A8;&#x5B89;&#x88C5;&#x4E86; npm &#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8FD9;&#x4E2A;&#x547D;&#x4EE4;&#x6765;&#x5B89;&#x88C5; npm &#x5305;&#x3002;&#x4F46;&#x662F;&#x4E00;&#x822C;&#x88C5;&#x5305;&#x4E4B;&#x524D;&#xFF0C;&#x5148;&#x8981;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; package.json &#x6587;&#x4EF6;&#x3002;</p>
+<pre><code class="lang-js">mkdir demo
+cd demo
+npm init -y
 </code></pre>
-<h3 id="state">state</h3>
-<p>state&#x72B6;&#x6001;&#xFF0C;&#x7EC4;&#x4EF6;&#x7684;state&#x6539;&#x53D8;&#xFF0C;&#x7EC4;&#x4EF6;&#x5C31;&#x4F1A;&#x91CD;&#x65B0;&#x6E32;&#x67D3;&#xFF0C;&#x9875;&#x9762;&#x4E5F;&#x5C31;&#x6539;&#x53D8;&#x4E86;
-react &#x7EC4;&#x4EF6;&#x9ED8;&#x8BA4;&#x6709;&#x4E00;&#x4E2A; state &#x5C5E;&#x6027;&#xFF0C;&#x8FD9;&#x4E2A;&#x5C5E;&#x6027;&#x662F;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x3002;
-&#x5728;constructor&#x5185;&#x8BBE;&#x7F6E;state&#xFF0C;&#x7528;this.state = {&#x8BBE;&#x7F6E;&#x72B6;&#x6001;}
-&#x4F7F;&#x7528; setState &#x65B9;&#x6CD5;&#x4FEE;&#x6539; state &#x503C;
-&#x4E24;&#x4E2A;&#x88C5;&#x6001;&#x6765;&#x56DE;&#x5207;&#x56DE;&#xFF0C;&#x8BBE;&#x7F6E;active = true/false,&#x7136;&#x540E;&#x8BBE;&#x7F6E;&#x65F6;&#x7528; &#x975E; &#x8FD0;&#x7B97;&#x7B26;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;!this.state.active
-setState &#x662F;&#x5F02;&#x6B65;&#x65B9;&#x6CD5;(&#x5F02;&#x6B65;&#x975E;&#x963B;&#x585E;&#xFF0C;&#x540C;&#x6B65;&#x963B;&#x585E;)
-requestAanimationFrame &#x76F8;&#x5F53;&#x4E8E; setTimeout(&#x8FD9;&#x4E2A;&#x662F;&#x6839;&#x636E;&#x7535;&#x8111;&#x672C;&#x8EAB;&#x7684;&#x6027;&#x80FD; &#x6267;&#x884C;&#x5FEB;&#x6162;)
-&#x7EC4;&#x4EF6;&#x5185;&#x90E8;&#x7684;setInterval&#x8981;&#x5B9A;&#x4E49;&#x4E3A;&#x7EC4;&#x4EF6;&#x7684;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;</p>
-<h3 id="&#x5B50;&#x7236;&#x7EC4;&#x4EF6;&#x76F8;&#x4E92;&#x4EA4;&#x4E92;">&#x5B50;&#x7236;&#x7EC4;&#x4EF6;&#x76F8;&#x4E92;&#x4EA4;&#x4E92;</h3>
-<p>constructor &#x51FD;&#x6570;&#x5185;&#x90E8;&#x4E0D;&#x505A;&#x8BBE;&#x7F6E;&#x662F;&#x62FF;&#x4E0D;&#x5230;&#x7236;&#x7EC4;&#x4EF6;&#x4F20;&#x8FC7;&#x6765;&#x7684; props &#x7684;&#xFF0C;&#x60F3;&#x8981;&#x62FF;&#x5230;&#xFF0C;&#x9700;&#x8981;&#x5728; constructor &#x51FD;&#x6570;&#x4F20;&#x4E00;&#x4E2A; porps &#x53C2;&#x6570;&#xFF0C;&#x5E76;&#x4E14;&#x4E5F;&#x9700;&#x8981;&#x5728; super &#x65B9;&#x6CD5;&#x5185;&#x4F20;&#x4E00;&#x4E2A;&#x53C2;&#x6570; props &#xFF0C;&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x5728; constructor &#x5185;&#x90E8;&#x83B7;&#x53D6;&#x5230; props
-state &#x7684;&#x503C; &#x4E00;&#x5B9A;&#x8981;&#x5B9A;&#x4E49;&#x6210;&#x5E38;&#x91CF;&#xFF0C;&#x4FEE;&#x6539;&#x7EC4;&#x4EF6;&#x72B6;&#x6001; state &#x53EA;&#x80FD;&#x7528; setState &#x65B9;&#x6CD5;&#x4FEE;&#x6539;</p>
-<h3 id="&#x7EC4;&#x4EF6;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;lifecycle">&#x7EC4;&#x4EF6;&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;(lifecycle)</h3>
-<p>&#x7EC4;&#x4EF6;&#x5B9E;&#x4F8B;&#x88AB;&#x521B;&#x5EFA;&#x548C;&#x63D2;&#x5165;DOM&#x4E2D;&#x65F6;&#x8C03;&#x7528;&#x4E0B;&#x9762;&#x56DB;&#x4E2A;&#x65B9;&#x6CD5;&#xFF1A;
-constructor() &#x521D;&#x59CB;&#x5316; props &#x548C; state
-componentWillMount() &#x7EC4;&#x4EF6;&#x5C06;&#x8981;&#x6302;&#x8F7D;
-render() &#x6E32;&#x67D3;
-componentDidMount() &#x7EC4;&#x4EF6;&#x6302;&#x8F7D;&#x5B8C;&#x6BD5;
-&#x5C5E;&#x6027;&#x6216;&#x72B6;&#x6001;&#x7684;&#x6539;&#x53D8;&#x4F1A;&#x89E6;&#x53D1;&#x4E00;&#x6B21;&#x66F4;&#x65B0;&#xFF0C;&#x5F53;&#x4E00;&#x4E2A;&#x7EC4;&#x4EF6;&#x5728;&#x88AB;&#x91CD;&#x6E32;&#x67D3;&#x65F6;&#xFF0C;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#x5C06;&#x4F1A;&#x88AB;&#x8C03;&#x7528;:
-componentWillReceiveProps() &#x53EA;&#x6709;&#x5728;&#x4FEE;&#x6539;&#x4E86; props &#x8C03;&#x7528;
-shouldComponentUpdate()&#x7EC4;&#x4EF6;&#x662F;&#x5426;&#x5E94;&#x8BE5;&#x88AB;&#x66F4;&#x65B0;&#xFF08;&#x6B64;&#x65B9;&#x6CD5; return true &#x610F;&#x601D;&#x5C31;&#x662F;&#x540C;&#x610F;&#x66F4;&#x65B0; &#xFF1B;return false &#x610F;&#x601D;&#x5C31;&#x662F;&#x4E0D;&#x540C;&#x610F;&#x66F4;&#x65B0;&#xFF09;
-componentWillUpdate()
-render()
-componentDidUpdate()
-componentWillUnmount() &#x7EC4;&#x4EF6;&#x9500;&#x6BC1;&#x548C;&#x5378;&#x8F7D;&#x540E;&#x7ACB;&#x5373;&#x8C03;&#x7528;,&#x901A;&#x5E38;&#x7528;&#x6765;&#x6E05;&#x695A;&#x8BA1;&#x65F6;&#x5668;&#x548C;&#x7F51;&#x7EDC;&#x8BF7;&#x6C42; -&#x5F53;&#x4F60;&#x4FEE;&#x6539;&#x4E86; state &#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E0A;&#x8FF0;&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570;&#x4F1A;&#x88AB;&#x6267;&#x884C;&#xFF0C;&#x9664;&#x4E86; componentWillReceiveProps() &#x4E4B;&#x5916;&#xFF0C;&#x6B64;&#x65F6;&#x5728;&#x8FD9;&#x4E9B;&#x51FD;&#x6570;&#x5185;&#x4E0D;&#x80FD;&#x4FEE;&#x6539; state
-&#x5F53;&#x7236;&#x7EC4;&#x4EF6;&#x60F3;&#x8981;&#x4FEE;&#x6539;&#x5B50;&#x7EC4;&#x4EF6;&#x7684;&#x72B6;&#x6001;&#x65F6;&#xFF0C;&#x9700;&#x8981;&#x7236;&#x7EC4;&#x4EF6;&#x4F20;props &#x4FEE;&#x6539;&#x5B50;&#x7EC4;&#x4EF6;&#x7684;&#x72B6;&#x6001;&#xFF0C;&#x4F46;&#x662F;props &#x4F20;&#x9012;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4E0A;&#x8FF0;&#x51E0;&#x4E2A;&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570;&#x90FD;&#x4F1A;&#x88AB;&#x89E6;&#x53D1;&#xFF0C;&#x4F46;&#x53EA;&#x6709; componentWillReceiveProps() &#x8FD9;&#x4E2A;&#x751F;&#x547D;&#x5468;&#x671F;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x4FEE;&#x6539; state
-props &#x9ED8;&#x8BA4;&#x503C;&#xFF1A; &#x7C7B;&#x540D;.defaultProps = {}</p>
+<p>&#x521B;&#x5EFA; demo &#x8FD9;&#x4E2A;&#x9879;&#x76EE;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x91CC;&#x9762;&#xFF0C;&#x8FD0;&#x884C; npm init -y &#x5C31;&#x53EF;&#x4EE5;&#x751F;&#x6210;&#x4E00;&#x4E2A; package.json &#x6587;&#x4EF6;&#x4E86;&#x3002;package.json &#x4E2D;&#x4F1A;&#x8BB0;&#x5F55;&#x6211;&#x4EEC;&#x5BF9;&#x8FD9;&#x4E2A;&#x9879;&#x76EE;&#x5B89;&#x88C5;&#x7684;&#x6240;&#x6709;&#x7684;&#x5305;&#xFF0C;&#x4EE5;&#x53CA;&#x5B83;&#x4EEC;&#x7684;&#x7248;&#x672C;&#xFF0C;&#x4FBF;&#x4E8E;&#x540E;&#x7EED;&#x5728;&#x4E00;&#x4E2A;&#x65B0;&#x73AF;&#x5883;&#x4E0B;&#xFF0C;&#x518D;&#x6B21;&#x4E00;&#x952E;&#x5B8C;&#x6210;&#x6240;&#x6709;&#x5305;&#x7684;&#x5B89;&#x88C5;&#x3002;</p>
+<pre><code class="lang-js">npm i axios
+</code></pre>
+<p>&#x4E0B;&#x9762;&#x6765;&#x5B89;&#x88C5; axios &#x8FD9;&#x4E2A;&#x5305;&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x8FD9;&#x91CC;&#x6CA1;&#x6709;&#x4F7F;&#x7528; -D &#x53C2;&#x6570;&#xFF0C;&#x610F;&#x601D;&#x662F;&#x8FD9;&#x4E2A;&#x5305;&#xFF0C;&#x662F;&#x666E;&#x901A;&#x5B89;&#x88C5;&#xFF0C;&#x51E1;&#x662F;&#x5728;&#x4EA7;&#x54C1;&#x4E0A;&#x7EBF;&#x540E;&#xFF0C;&#x8FD0;&#x884C;&#x7684;&#x65F6;&#x5019;&#x4E5F;&#x9700;&#x8981;&#x7684;&#x5305;&#xFF0C;&#x90FD;&#x4EE5;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x6765;&#x5B89;&#x88C5;&#x3002;&#x800C;&#x53EA;&#x662F;&#x5728;&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;&#x4E2D;&#x4F7F;&#x7528;&#x7684;&#x5305;&#xFF0C;&#x4F8B;&#x5982; webpack &#xFF0C;&#x5C31;&#x4F1A;&#x7528; -D &#x53C2;&#x6570;&#xFF0C;&#x610F;&#x601D;&#x662F;&#x4EC5;&#x5728;&#x5F00;&#x53D1;&#x73AF;&#x5883;&#x4E0B;&#x5B89;&#x88C5;&#x3002;</p>
+<h3 id="&#x4F7F;&#x7528;-npm-&#x5305;">&#x4F7F;&#x7528; npm &#x5305;</h3>
+<p>npm &#x5305;&#xFF0C;&#x90FD;&#x53EF;&#x4EE5;&#x4EE5; ES6 &#x6A21;&#x5757;&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x5BFC;&#x5165;&#x540E;&#x4F7F;&#x7528;&#x3002;&#x4E4B;&#x524D;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x642D;&#x5EFA;&#x597D;&#x4E86; webpack &#x6253;&#x5305;&#x73AF;&#x5883;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x6765;&#x4F7F;&#x7528; ES6 &#x6A21;&#x5757;&#x548C; npm &#x5305;&#x4E86;&#x3002;</p>
+<h5 id="indexjs">index.js</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">import</span> axios <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;axios&apos;</span>
+
+axios.get(<span class="hljs-string">&apos;https://api.github.com/users/happypeter&apos;</span>).then(res =&gt; {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">&apos;My username:&apos;</span>, res.data)
+})
+</code></pre>
+<p>index.js &#x4E2D;&#x4F7F;&#x7528; axios &#xFF0C;&#x8BF7;&#x6C42; github API &#x3002;</p>
+<pre><code class="lang-js">npm run build
+</code></pre>
+<p>&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#xFF0C;&#x6253;&#x5F00; index.html &#xFF0C;&#x662F;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x4ECE; github &#x8BF7;&#x6C42;&#x5F97;&#x5230;&#x7684;&#x4FE1;&#x606F;&#x7684;&#x3002;
+<a href="../img/1525231989519-77683288-b486-41d8-ab52-f226d9143247.png"></a></p>
 
                                 
                                 </section>
@@ -938,12 +898,12 @@ props &#x9ED8;&#x8BA4;&#x503C;&#xFF1A; &#x7C7B;&#x540D;.defaultProps = {}</p>
 
             
                 
-                <a href="anzhuang.html" class="navigation navigation-prev " aria-label="Previous page: 第一章：react">
+                <a href="webpack.html" class="navigation navigation-prev " aria-label="Previous page: 第三节：用 webpack 进行项目构建">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="../vue-new/" class="navigation navigation-next " aria-label="Next page: 第二章：vue 评论页面">
+                <a href="api.html" class="navigation navigation-next " aria-label="Next page: 第零节：api">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -954,7 +914,7 @@ props &#x9ED8;&#x8BA4;&#x503C;&#xFF1A; &#x7C7B;&#x540D;.defaultProps = {}</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"第一节：react","level":"1.2.1","depth":2,"next":{"title":"第二章：vue 评论页面","level":"1.3","depth":1,"path":"vue-new/index.md","ref":"vue-new/index.md","articles":[{"title":"第一节：搭建 vue 环境","level":"1.3.1","depth":2,"path":"vue-new/vue-cli.md","ref":"vue-new/vue-cli.md","articles":[]},{"title":"第二节：添加 vue 组件","level":"1.3.2","depth":2,"path":"vue-new/edit.md","ref":"vue-new/edit.md","articles":[]},{"title":"第三节：vue-state","level":"1.3.3","depth":2,"path":"vue-new/state.md","ref":"vue-new/state.md","articles":[]},{"title":"第四节：vue-事件","level":"1.3.4","depth":2,"path":"vue-new/event.md","ref":"vue-new/event.md","articles":[]},{"title":"第五节：vue-属性","level":"1.3.5","depth":2,"path":"vue-new/attribute.md","ref":"vue-new/attribute.md","articles":[]},{"title":"第六节：vue-路由","level":"1.3.6","depth":2,"path":"vue-new/router.md","ref":"vue-new/router.md","articles":[]},{"title":"第七节：vue-动态路由","level":"1.3.7","depth":2,"path":"vue-new/route.md","ref":"vue-new/route.md","articles":[]},{"title":"第八节：vue-添加评论 store","level":"1.3.8","depth":2,"path":"vue-new/vue-store.md","ref":"vue-new/vue-store.md","articles":[]},{"title":"第九节：vue-修改 store 中的数据","level":"1.3.9","depth":2,"path":"vue-new/mutation.md","ref":"vue-new/mutation.md","articles":[]},{"title":"第十节：vue-action","level":"1.3.10","depth":2,"path":"vue-new/action.md","ref":"vue-new/action.md","articles":[]},{"title":"第十一节：vue-API","level":"1.3.11","depth":2,"path":"vue-new/api.md","ref":"vue-new/api.md","articles":[]},{"title":"第十二节：vue-发评论","level":"1.3.12","depth":2,"path":"vue-new/commentary.md","ref":"vue-new/commentary.md","articles":[]},{"title":"第十三节：vue-文章列表","level":"1.3.13","depth":2,"path":"vue-new/list.md","ref":"vue-new/list.md","articles":[]},{"title":"第十四节：使用 v-if 应对初始值为空","level":"1.3.14","depth":2,"path":"vue-new/v-if.md","ref":"vue-new/v-if.md","articles":[]},{"title":"第十五节：处理数据关系","level":"1.3.15","depth":2,"path":"vue-new/comments.md","ref":"vue-new/comments.md","articles":[]},{"title":"第十六节：使用 Getter 简化代码","level":"1.3.16","depth":2,"path":"vue-new/getter.md","ref":"vue-new/getter.md","articles":[]},{"title":"vue 笔记","level":"1.3.17","depth":2,"path":"vue-new/node.md","ref":"vue-new/node.md","articles":[]}]},"previous":{"title":"第一章：react","level":"1.2","depth":1,"path":"react/anzhuang.md","ref":"react/anzhuang.md","articles":[{"title":"第一节：react","level":"1.2.1","depth":2,"path":"react/state.md","ref":"react/state.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"react/state.md","mtime":"2018-04-23T02:58:27.484Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-08T06:43:12.297Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"第四节：使用 npm 包","level":"1.5.4","depth":2,"next":{"title":"第零节：api","level":"1.5.5","depth":2,"path":"vue-node/api.md","ref":"vue-node/api.md","articles":[]},"previous":{"title":"第三节：用 webpack 进行项目构建","level":"1.5.3","depth":2,"path":"vue-node/webpack.md","ref":"vue-node/webpack.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"vue-node/npm.md","mtime":"2018-05-02T08:51:01.738Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-05-08T06:43:12.297Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
