@@ -4,6 +4,9 @@
 v-bind:  简写   :
 v-on:   简写    @
 
+computed  计算属性
+methods  
+
 
 <style scoped> 限制作用域  
 .reverse() 数组逆序
